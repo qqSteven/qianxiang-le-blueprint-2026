@@ -1,1 +1,1182 @@
-PCFET0NUWVBFIGh0bWw+DQo8aHRtbCBsYW5nPSJ6aC1DTiI+DQo8aGVhZD4NCjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4NCjxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj4NCjx0aXRsZT5RaWFueGlhbmcgeCBMRSDigJQgQ29tbWVyY2lhbCBCbHVlcHJpbnQgJmFtcDsgUGFydG5lcnNoaXAgRnJhbWV3b3JrPC90aXRsZT4NCjxzdHlsZT4NCiAgOnJvb3Qgew0KDQogIC8qID09PSBQQVNTV09SRCBHQVRFID09PSAqLw0KICAjcHctZ2F0ZSB7DQogICAgcG9zaXRpb246IGZpeGVkOyB0b3A6MDsgbGVmdDowOyB3aWR0aDoxMDAlOyBoZWlnaHQ6MTAwJTsNCiAgICBiYWNrZ3JvdW5kOiB2YXIoLS1uYXZ5KTsNCiAgICBkaXNwbGF5OiBmbGV4OyBmbGV4LWRpcmVjdGlvbjogY29sdW1uOw0KICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7IGp1c3RpZnktY29udGVudDogY2VudGVyOw0KICAgIHotaW5kZXg6IDk5OTk5Ow0KICAgIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUknLCBzeXN0ZW0tdWksIHNhbnMtc2VyaWY7DQogIH0NCiAgI3B3LWdhdGUgaDIgew0KICAgIGNvbG9yOiAjZmZmOyBmb250LXNpemU6IDEuNmVtOyBmb250LXdlaWdodDogMzAwOw0KICAgIG1hcmdpbi1ib3R0b206IDhweDsgbGV0dGVyLXNwYWNpbmc6IDFweDsNCiAgfQ0KICAjcHctZ2F0ZSAucHctc3ViIHsNCiAgICBjb2xvcjogdmFyKC0tdGV4dC1kaW0pOyBmb250LXNpemU6IDAuOGVtOyBtYXJnaW4tYm90dG9tOiAyOHB4Ow0KICB9DQogICNwdy1nYXRlIGlucHV0IHsNCiAgICBiYWNrZ3JvdW5kOiByZ2JhKDEzLDMxLDYwLDAuOCk7IGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoMjEyLDE2OCw4MywwLjMpOw0KICAgIGNvbG9yOiAjZmZmOyBwYWRkaW5nOiAxMnB4IDIwcHg7IGZvbnQtc2l6ZTogMS4xZW07IGJvcmRlci1yYWRpdXM6IDZweDsNCiAgICB3aWR0aDogMjYwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgbGV0dGVyLXNwYWNpbmc6IDJweDsNCiAgICBvdXRsaW5lOiBub25lOyB0cmFuc2l0aW9uOiBib3JkZXIgMC4yczsNCiAgfQ0KICAjcHctZ2F0ZSBpbnB1dDpmb2N1cyB7IGJvcmRlci1jb2xvcjogdmFyKC0tZ29sZCk7IH0NCiAgI3B3LWdhdGUgLnB3LWJ0biB7DQogICAgbWFyZ2luLXRvcDogMTRweDsgcGFkZGluZzogMTBweCA0MHB4Ow0KICAgIGJhY2tncm91bmQ6IHZhcigtLWdvbGQpOyBjb2xvcjogdmFyKC0tbmF2eSk7DQogICAgYm9yZGVyOiBub25lOyBib3JkZXItcmFkaXVzOiA2cHg7IGZvbnQtc2l6ZTogMC45ZW07IGZvbnQtd2VpZ2h0OiA2MDA7DQogICAgY3Vyc29yOiBwb2ludGVyOyBsZXR0ZXItc3BhY2luZzogMXB4OyB0cmFuc2l0aW9uOiBvcGFjaXR5IDAuMnM7DQogIH0NCiAgI3B3LWdhdGUgLnB3LWJ0bjpob3ZlciB7IG9wYWNpdHk6IDAuODU7IH0NCiAgI3B3LWdhdGUgLnB3LWVycm9yIHsNCiAgICBjb2xvcjogdmFyKC0tZGFuZ2VyKTsgZm9udC1zaXplOiAwLjc1ZW07IG1hcmdpbi10b3A6IDEwcHg7IGRpc3BsYXk6IG5vbmU7DQogIH0NCg0KICAgIC0tbmF2eTogIzBhMTYyODsNCiAgICAtLWJsdWUtZGFyazogIzBkMWYzYzsNCiAgICAtLWJsdWU6ICMxYTNhNWM7DQogICAgLS1hY2NlbnQ6ICMzYjgyZjY7DQogICAgLS1nb2xkOiAjZDRhODUzOw0KICAgIC0td2hpdGU6ICNmMGYyZjU7DQogICAgLS10ZXh0OiAjYzhkMGRhOw0KICAgIC0tdGV4dC1kaW06ICM2YTdhOTA7DQogICAgLS1ib3JkZXI6IHJnYmEoNTksMTMwLDI0NiwwLjE1KTsNCiAgICAtLWNhcmQtYmc6IHJnYmEoMTMsMzEsNjAsMC42KTsNCiAgICAtLXN1Y2Nlc3M6ICMxMGI5ODE7DQogICAgLS13YXJuaW5nOiAjZjU5ZTBiOw0KICAgIC0tZGFuZ2VyOiAjZWY0NDQ0Ow0KICB9DQogICogeyBtYXJnaW46MDsgcGFkZGluZzowOyBib3gtc2l6aW5nOmJvcmRlci1ib3g7IH0NCiAgYm9keSB7DQogICAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSScsIHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgJ05vdG8gU2FucyBTQycsICdNaWNyb3NvZnQgWWFIZWknLCBzYW5zLXNlcmlmOw0KICAgIGJhY2tncm91bmQ6IHZhcigtLW5hdnkpOw0KICAgIGNvbG9yOiB2YXIoLS10ZXh0KTsNCiAgICBsaW5lLWhlaWdodDogMS43Ow0KICB9DQoNCiAgLyogPT09IENPVkVSID09PSAqLw0KICAuY292ZXIgew0KICAgIG1pbi1oZWlnaHQ6IDEwMHZoOw0KICAgIGRpc3BsYXk6IGZsZXg7DQogICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsNCiAgICBhbGlnbi1pdGVtczogY2VudGVyOw0KICAgIGp1c3RpZnktY29udGVudDogY2VudGVyOw0KICAgIHRleHQtYWxpZ246IGNlbnRlcjsNCiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTYwZGVnLCAjMDYwZDE4IDAlLCAjMGExNjI4IDQwJSwgIzBkMWYzYyAxMDAlKTsNCiAgICBwYWRkaW5nOiA0MHB4IDI0cHg7DQogICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHJnYmEoMjEyLDE2OCw4MywwLjE1KTsNCiAgfQ0KICAuY292ZXIgLmJhZGdlIHsNCiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7DQogICAgYm9yZGVyOiAxcHggc29saWQgcmdiYSgyMTIsMTY4LDgzLDAuMyk7DQogICAgY29sb3I6IHZhcigtLWdvbGQpOw0KICAgIGZvbnQtc2l6ZTogMTBweDsNCiAgICBmb250LXdlaWdodDogNjAwOw0KICAgIGxldHRlci1zcGFjaW5nOiAzcHg7DQogICAgcGFkZGluZzogNnB4IDE4cHg7DQogICAgYm9yZGVyLXJhZGl1czogNHB4Ow0KICAgIG1hcmdpbi1ib3R0b206IDMycHg7DQogICAgYmFja2dyb3VuZDogcmdiYSgyMTIsMTY4LDgzLDAuMDYpOw0KICB9DQogIC5jb3ZlciBoMSB7DQogICAgZm9udC1zaXplOiAyLjhlbTsNCiAgICBmb250LXdlaWdodDogMzAwOw0KICAgIGNvbG9yOiAjZmZmOw0KICAgIGxldHRlci1zcGFjaW5nOiAxcHg7DQogICAgbGluZS1oZWlnaHQ6IDEuMzU7DQogICAgbWFyZ2luLWJvdHRvbTogOHB4Ow0KICB9DQogIC5jb3ZlciBoMSAuZ29sZCB7IGNvbG9yOiB2YXIoLS1nb2xkKTsgZm9udC13ZWlnaHQ6IDQwMDsgfQ0KICAuY292ZXIgLnN1YnRpdGxlIHsNCiAgICBmb250LXNpemU6IDEuMDVlbTsNCiAgICBjb2xvcjogdmFyKC0tdGV4dC1kaW0pOw0KICAgIG1hcmdpbi10b3A6IDEycHg7DQogICAgbGV0dGVyLXNwYWNpbmc6IDAuNXB4Ow0KICB9DQogIC5jb3ZlciAubGluZSB7DQogICAgd2lkdGg6IDYwcHg7DQogICAgaGVpZ2h0OiAycHg7DQogICAgYmFja2dyb3VuZDogdmFyKC0tZ29sZCk7DQogICAgbWFyZ2luOiAyOHB4IGF1dG87DQogICAgYm9yZGVyLXJhZGl1czogMXB4Ow0KICB9DQogIC5jb3ZlciAucGFydGllcyB7DQogICAgZGlzcGxheTogZmxleDsNCiAgICBnYXA6IDQwcHg7DQogICAgbWFyZ2luLXRvcDogMjhweDsNCiAgICBmb250LXNpemU6IDAuODVlbTsNCiAgICBjb2xvcjogdmFyKC0tdGV4dC1kaW0pOw0KICB9DQogIC5jb3ZlciAucGFydGllcyBzcGFuIHsgY29sb3I6IHZhcigtLWdvbGQpOyB9DQogIC5jb3ZlciAuZGF0ZSB7DQogICAgbWFyZ2luLXRvcDogNDhweDsNCiAgICBmb250LXNpemU6IDAuNzVlbTsNCiAgICBjb2xvcjogcmdiYSgxMDYsMTIyLDE0NCwwLjUpOw0KICAgIGxldHRlci1zcGFjaW5nOiAycHg7DQogICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTsNCiAgfQ0KDQogIC8qID09PSBTRUNUSU9OUyA9PT0gKi8NCiAgLnNlY3Rpb24gew0KICAgIG1heC13aWR0aDogOTYwcHg7DQogICAgbWFyZ2luOiAwIGF1dG87DQogICAgcGFkZGluZzogNjRweCAzMnB4Ow0KICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDI1NSwyNTUsMjU1LDAuMDQpOw0KICB9DQogIC5zZWN0aW9uOmxhc3QtY2hpbGQgeyBib3JkZXItYm90dG9tOiBub25lOyB9DQoNCiAgLnNlY3Rpb24taGVhZGVyIHsgbWFyZ2luLWJvdHRvbTogMzZweDsgfQ0KLnNlY3Rpb24tbnVtIHsNCiAgICBmb250LXNpemU6IDExcHg7DQogICAgZm9udC13ZWlnaHQ6IDcwMDsNCiAgICBjb2xvcjogdmFyKC0tZ29sZCk7DQogICAgbGV0dGVyLXNwYWNpbmc6IDJweDsNCiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOw0KICAgIG1hcmdpbi1ib3R0b206IDZweDsNCiAgfQ0KICAuc2VjdGlvbiBoMiB7DQogICAgZm9udC1zaXplOiAyZW07DQogICAgZm9udC13ZWlnaHQ6IDMwMDsNCiAgICBjb2xvcjogI2ZmZjsNCiAgICBsZXR0ZXItc3BhY2luZzogMC41cHg7DQogICAgbWFyZ2luLWJvdHRvbTogOHB4Ow0KICB9DQogIC5zZWN0aW9uIGgyIC5nb2xkIHsgY29sb3I6IHZhcigtLWdvbGQpOyB9DQogIC5zZWN0aW9uIC5zdWIgeyBjb2xvcjogdmFyKC0tdGV4dC1kaW0pOyBmb250LXNpemU6IDAuOWVtOyB9DQoNCiAgLnNlY3Rpb24gLmNuLWhlYWRlciB7IGNvbG9yOiB2YXIoLS10ZXh0LWRpbSk7IGZvbnQtc2l6ZTogMWVtOyBmb250LXdlaWdodDogNDAwOyBtYXJnaW4tYm90dG9tOiA0cHg7IH0NCiAgLnNlY3Rpb24gLmNuLXN1YiB7IGNvbG9yOiB2YXIoLS10ZXh0LWRpbSk7IGZvbnQtc2l6ZTogMC43NWVtOyBtYXJnaW4tYm90dG9tOiAxNnB4OyB9DQoNCiAgaDMgew0KICAgIGZvbnQtc2l6ZTogMS4xNWVtOw0KICAgIGZvbnQtd2VpZ2h0OiA2MDA7DQogICAgY29sb3I6ICNlMGU2ZWY7DQogICAgbWFyZ2luOiAyOHB4IDAgMTJweDsNCiAgICBwYWRkaW5nLWJvdHRvbTogOHB4Ow0KICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDI1NSwyNTUsMjU1LDAuMDYpOw0KICAgIGRpc3BsYXk6IGZsZXg7DQogICAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAgICBnYXA6IDEwcHg7DQogIH0NCiAgaDMgLmljb24geyBmb250LXNpemU6IDEuMmVtOyB9DQogIHAgeyBtYXJnaW46IDEwcHggMDsgfQ0KDQogIC8qIENhcmRzICovDQogIC5jYXJkIHsNCiAgICBiYWNrZ3JvdW5kOiB2YXIoLS1jYXJkLWJnKTsNCiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1ib3JkZXIpOw0KICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7DQogICAgcGFkZGluZzogMjRweCAyOHB4Ow0KICAgIG1hcmdpbjogMThweCAwOw0KICB9DQogIC5jYXJkLmdvbGQtYm9yZGVyIHsgYm9yZGVyLWxlZnQ6IDNweCBzb2xpZCB2YXIoLS1nb2xkKTsgfQ0KICAuY2FyZC5ibHVlLWJvcmRlciB7IGJvcmRlci1sZWZ0OiAzcHggc29saWQgdmFyKC0tYWNjZW50KTsgfQ0KDQogIC5jYXJkLWdyaWQgew0KICAgIGRpc3BsYXk6IGdyaWQ7DQogICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyOw0KICAgIGdhcDogMThweDsNCiAgfQ0KICBAbWVkaWEgKG1heC13aWR0aDogNzAwcHgpIHsgLmNhcmQtZ3JpZCB7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyOyB9IH0NCg0KICAuc3RhdC1ncmlkIHsNCiAgICBkaXNwbGF5OiBncmlkOw0KICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDQsIDFmcik7DQogICAgZ2FwOiAxNHB4Ow0KICB9DQogIEBtZWRpYSAobWF4LXdpZHRoOiA3MDBweCkgeyAuc3RhdC1ncmlkIHsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyOyB9IH0NCiAgLnN0YXQtY2FyZCB7DQogICAgYmFja2dyb3VuZDogdmFyKC0tY2FyZC1iZyk7DQogICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tYm9yZGVyKTsNCiAgICBib3JkZXItcmFkaXVzOiA4cHg7DQogICAgcGFkZGluZzogMThweDsNCiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7DQogIH0NCiAgLnN0YXQtY2FyZCAubnVtYmVyIHsNCiAgICBmb250LXNpemU6IDJlbTsNCiAgICBmb250LXdlaWdodDogMzAwOw0KICAgIGNvbG9yOiB2YXIoLS1nb2xkKTsNCiAgICBsaW5lLWhlaWdodDogMS4yOw0KICB9DQogIC5zdGF0LWNhcmQgLmxhYmVsIHsNCiAgICBmb250LXNpemU6IDAuNzhlbTsNCiAgICBjb2xvcjogdmFyKC0tdGV4dC1kaW0pOw0KICAgIG1hcmdpbi10b3A6IDZweDsNCiAgfQ0KDQogIC8qIFRhYmxlcyAqLw0KICB0YWJsZSB7DQogICAgd2lkdGg6IDEwMCU7DQogICAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsNCiAgICBtYXJnaW46IDE0cHggMDsNCiAgICBmb250LXNpemU6IDAuOWVtOw0KICB9DQogIHRoIHsNCiAgICB0ZXh0LWFsaWduOiBsZWZ0Ow0KICAgIHBhZGRpbmc6IDEycHggMTRweDsNCiAgICBiYWNrZ3JvdW5kOiByZ2JhKDU5LDEzMCwyNDYsMC4wOCk7DQogICAgY29sb3I6IHZhcigtLWdvbGQpOw0KICAgIGZvbnQtd2VpZ2h0OiA1MDA7DQogICAgZm9udC1zaXplOiAwLjg1ZW07DQogICAgbGV0dGVyLXNwYWNpbmc6IDAuNXB4Ow0KICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB2YXIoLS1ib3JkZXIpOw0KICB9DQogIHRkIHsNCiAgICBwYWRkaW5nOiAxMXB4IDE0cHg7DQogICAgY29sb3I6IHZhcigtLXRleHQpOw0KICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDI1NSwyNTUsMjU1LDAuMDQpOw0KICB9DQogIHRkIHNtYWxsIHsgY29sb3I6IHZhcigtLXRleHQtZGltKTsgZGlzcGxheTogYmxvY2s7IG1hcmdpbi10b3A6IDJweDsgfQ0KDQogIC8qIEZsb3cgKi8NCiAgLmZsb3ctaCB7IGRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiBjZW50ZXI7IGp1c3RpZnktY29udGVudDogY2VudGVyOyBnYXA6IDEycHg7IGZsZXgtd3JhcDogd3JhcDsgbWFyZ2luOiAxOHB4IDA7IH0NCiAgLmZsb3ctYm94IHsNCiAgICBiYWNrZ3JvdW5kOiByZ2JhKDU5LDEzMCwyNDYsMC4wOCk7DQogICAgYm9yZGVyOiAxcHggc29saWQgcmdiYSg1OSwxMzAsMjQ2LDAuMik7DQogICAgYm9yZGVyLXJhZGl1czogOHB4Ow0KICAgIHBhZGRpbmc6IDEycHggMjBweDsNCiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7DQogICAgZm9udC1zaXplOiAwLjg1ZW07DQogICAgY29sb3I6IHZhcigtLXRleHQpOw0KICB9DQogIC5mbG93LWJveC5nb2xkIHsgYm9yZGVyLWNvbG9yOiByZ2JhKDIxMiwxNjgsODMsMC4zKTsgYmFja2dyb3VuZDogcmdiYSgyMTIsMTY4LDgzLDAuMDgpOyBjb2xvcjogdmFyKC0tZ29sZCk7IH0NCiAgLmZsb3ctYXJyb3cgeyBjb2xvcjogdmFyKC0tYWNjZW50KTsgZm9udC1zaXplOiAxLjNlbTsgfQ0KICAuZmxvdy12IHsgZGlzcGxheTogZmxleDsgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsgYWxpZ24taXRlbXM6IGNlbnRlcjsgZ2FwOiA2cHg7IG1hcmdpbjogMTZweCAwOyB9DQogIC5mbG93LXYgLmZsb3ctYm94IHsgd2lkdGg6IDEwMCU7IG1heC13aWR0aDogNTAwcHg7IH0NCg0KICAvKiBIaWdobGlnaHQgYm94ICovDQogIC5oaWdobGlnaHQgew0KICAgIGJhY2tncm91bmQ6IHJnYmEoMjEyLDE2OCw4MywwLjA2KTsNCiAgICBib3JkZXItbGVmdDogM3B4IHNvbGlkIHZhcigtLWdvbGQpOw0KICAgIHBhZGRpbmc6IDE4cHggMjJweDsNCiAgICBib3JkZXItcmFkaXVzOiAwIDhweCA4cHggMDsNCiAgICBtYXJnaW46IDE2cHggMDsNCiAgfQ0KICAuaGlnaGxpZ2h0IHAgeyBjb2xvcjogdmFyKC0tZ29sZCk7IG1hcmdpbjogMDsgfQ0KICAuaGlnaGxpZ2h0LmNuIHsgYmFja2dyb3VuZDogcmdiYSg1OSwxMzAsMjQ2LDAuMDYpOyBib3JkZXItbGVmdDogM3B4IHNvbGlkIHZhcigtLWFjY2VudCk7IH0NCiAgLmhpZ2hsaWdodC5jbiBwIHsgY29sb3I6IHZhcigtLWFjY2VudCk7IH0NCg0KICAvKiBUd28gY29sdW1uICovDQogIC50d28tY29sIHsNCiAgICBkaXNwbGF5OiBncmlkOw0KICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmcjsNCiAgICBnYXA6IDI0cHg7DQogIH0NCiAgQG1lZGlhIChtYXgtd2lkdGg6IDcwMHB4KSB7IC50d28tY29sIHsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7IH0gfQ0KDQogIC8qIERpdmlkZXIgKi8NCiAgLmxhbmctZGl2aWRlciB7DQogICAgdGV4dC1hbGlnbjogY2VudGVyOw0KICAgIG1hcmdpbjogMjhweCAwOw0KICAgIHBvc2l0aW9uOiByZWxhdGl2ZTsNCiAgfQ0KICAubGFuZy1kaXZpZGVyOjpiZWZvcmUgew0KICAgIGNvbnRlbnQ6ICcnOw0KICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTsNCiAgICBsZWZ0OiAwOw0KICAgIHJpZ2h0OiAwOw0KICAgIHRvcDogNTAlOw0KICAgIGhlaWdodDogMXB4Ow0KICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LDI1NSwyNTUsMC4wNik7DQogIH0NCiAgLmxhbmctZGl2aWRlciBzcGFuIHsNCiAgICBiYWNrZ3JvdW5kOiB2YXIoLS1uYXZ5KTsNCiAgICBwYWRkaW5nOiAwIDE2cHg7DQogICAgcG9zaXRpb246IHJlbGF0aXZlOw0KICAgIGNvbG9yOiB2YXIoLS10ZXh0LWRpbSk7DQogICAgZm9udC1zaXplOiAwLjc1ZW07DQogICAgbGV0dGVyLXNwYWNpbmc6IDJweDsNCiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOw0KICB9DQoNCiAgLyogVGFnICovDQogIC50YWcgew0KICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsNCiAgICBiYWNrZ3JvdW5kOiByZ2JhKDU5LDEzMCwyNDYsMC4xMik7DQogICAgY29sb3I6IHZhcigtLWFjY2VudCk7DQogICAgZm9udC1zaXplOiAwLjc1ZW07DQogICAgcGFkZGluZzogMnB4IDEwcHg7DQogICAgYm9yZGVyLXJhZGl1czogNHB4Ow0KICAgIGZvbnQtd2VpZ2h0OiA1MDA7DQogIH0NCiAgLnRhZy5nb2xkIHsgYmFja2dyb3VuZDogcmdiYSgyMTIsMTY4LDgzLDAuMTIpOyBjb2xvcjogdmFyKC0tZ29sZCk7IH0NCiAgLnRhZy5yZWQgeyBiYWNrZ3JvdW5kOiByZ2JhKDIzOSw2OCw2OCwwLjEpOyBjb2xvcjogdmFyKC0tZGFuZ2VyKTsgfQ0KDQogIC8qIEJpbGluZ3VhbCBwYXJhZ3JhcGggYmxvY2sgKi8NCiAgLmJpbGluZ3VhbC1ibG9jayB7IG1hcmdpbjogMTRweCAwOyB9DQogIC5iaWxpbmd1YWwtYmxvY2sgLmVuIHsgY29sb3I6IHZhcigtLXdoaXRlKTsgZm9udC1zaXplOiAxZW07IG1hcmdpbi1ib3R0b206IDRweDsgfQ0KICAuYmlsaW5ndWFsLWJsb2NrIC5jbiB7IGNvbG9yOiB2YXIoLS10ZXh0LWRpbSk7IGZvbnQtc2l6ZTogMC44MmVtOyB9DQogIC5iaWxpbmd1YWwtYmxvY2sgLmVuLXRpdGxlIHsgY29sb3I6IHZhcigtLWdvbGQpOyBmb250LXdlaWdodDogNjAwOyBmb250LXNpemU6IDEuMDVlbTsgbWFyZ2luLWJvdHRvbTogNHB4OyB9DQogIC5iaWxpbmd1YWwtYmxvY2sgLmNuLXRpdGxlIHsgY29sb3I6IHZhcigtLXRleHQtZGltKTsgZm9udC1zaXplOiAwLjhlbTsgZm9udC1zdHlsZTogaXRhbGljOyB9DQoNCiAgLyogPT09IExBTkdVQUdFIFRPR0dMRSA9PT0gKi8NCiAgLmxhbmctdG9nZ2xlIHsNCiAgICBwb3NpdGlvbjogZml4ZWQ7DQogICAgdG9wOiAxNnB4Ow0KICAgIHJpZ2h0OiAxNnB4Ow0KICAgIHotaW5kZXg6IDk5OTk7DQogICAgZGlzcGxheTogZmxleDsNCiAgICBib3JkZXItcmFkaXVzOiA4cHg7DQogICAgb3ZlcmZsb3c6IGhpZGRlbjsNCiAgICBib3JkZXI6IDFweCBzb2xpZCByZ2JhKDIxMiwxNjgsODMsMC40KTsNCiAgICBib3gtc2hhZG93OiAwIDJweCAxNnB4IHJnYmEoMCwwLDAsMC40KTsNCiAgICBmb250LWZhbWlseTogJ1NlZ29lIFVJJywgc3lzdGVtLXVpLCBzYW5zLXNlcmlmOw0KICB9DQogIC5sYW5nLXRvZ2dsZSBidXR0b24gew0KICAgIGFsbDogdW5zZXQ7DQogICAgcGFkZGluZzogOHB4IDE2cHg7DQogICAgZm9udC1zaXplOiAwLjgyZW07DQogICAgZm9udC13ZWlnaHQ6IDYwMDsNCiAgICBjdXJzb3I6IHBvaW50ZXI7DQogICAgbGV0dGVyLXNwYWNpbmc6IDAuNXB4Ow0KICAgIHRyYW5zaXRpb246IGFsbCAwLjJzOw0KICAgIGJhY2tncm91bmQ6IHJnYmEoMTAsMjIsNDAsMC44NSk7DQogICAgY29sb3I6IHZhcigtLXRleHQtZGltKTsNCiAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCByZ2JhKDIxMiwxNjgsODMsMC4xNSk7DQogICAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDEwcHgpOw0KICB9DQogIC5sYW5nLXRvZ2dsZSBidXR0b246bGFzdC1jaGlsZCB7IGJvcmRlci1yaWdodDogbm9uZTsgfQ0KICAubGFuZy10b2dnbGUgYnV0dG9uLmFjdGl2ZSB7DQogICAgYmFja2dyb3VuZDogdmFyKC0tZ29sZCk7DQogICAgY29sb3I6IHZhcigtLW5hdnkpOw0KICB9DQogIC5sYW5nLXRvZ2dsZSBidXR0b246aG92ZXI6bm90KC5hY3RpdmUpIHsNCiAgICBjb2xvcjogdmFyKC0tZ29sZCk7DQogICAgYmFja2dyb3VuZDogcmdiYSgyMTIsMTY4LDgzLDAuMSk7DQogIH0NCg0KICAvKiBMYW5ndWFnZSB2aXNpYmlsaXR5ICovDQogIGJvZHkubGFuZy1lbiAuemgsIGJvZHkubGFuZy1lbiAuY24taGVhZGVyLCBib2R5LmxhbmctZW4gLmNuLXN1YiB7IGRpc3BsYXk6IG5vbmU7IH0NCiAgYm9keS5sYW5nLWVuIC5iaWxpbmd1YWwtYmxvY2sgLmNuIHsgZGlzcGxheTogbm9uZTsgfQ0KICBib2R5LmxhbmctZW4gLmJpbGluZ3VhbC1ibG9jayAuY24tdGl0bGUgeyBkaXNwbGF5OiBub25lOyB9DQoNCiAgYm9keS5sYW5nLXpoIC5lbi1ibG9jaywgYm9keS5sYW5nLXpoIC5zdWIgeyBkaXNwbGF5OiBub25lOyB9DQogIGJvZHkubGFuZy16aCAuYmlsaW5ndWFsLWJsb2NrIC5lbiB7IGRpc3BsYXk6IG5vbmU7IH0NCiAgYm9keS5sYW5nLXpoIC5iaWxpbmd1YWwtYmxvY2sgLmVuLXRpdGxlIHsgZGlzcGxheTogbm9uZTsgfQ0KICBib2R5LmxhbmctemggLnp7IGRpc3BsYXk6IGJsb2NrOyB9DQoNCiAgLyogSW4gWkggbW9kZSwgc2hvdyBjbi10aXRsZSwgY24taGVhZGVyLCBjbi1zdWIgKi8NCiAgYm9keS5sYW5nLXpoIC5iaWxpbmd1YWwtYmxvY2sgLmNuLXRpdGxlIHsgZGlzcGxheTogYmxvY2s7IH0NCiAgYm9keS5sYW5nLXpoIC5jbi1oZWFkZXIgeyBkaXNwbGF5OiBibG9jazsgfQ0KICBib2R5LmxhbmctemggLmNuLXN1YiB7IGRpc3BsYXk6IGJsb2NrOyB9DQoNCiAgLyogSW4gWkggbW9kZSwgY24gYmxvY2tzIGJlY29tZSB3aGl0ZSAqLw0KICBib2R5LmxhbmctemggLmJpbGluZ3VhbC1ibG9jayAuY24gew0KICAgIGNvbG9yOiB2YXIoLS13aGl0ZSkgIWltcG9ydGFudDsNCiAgICBmb250LXNpemU6IDFlbSAhaW1wb3J0YW50Ow0KICB9DQogIGJvZHkubGFuZy16aCAuYmlsaW5ndWFsLWJsb2NrIC5jbi10aXRsZSB7DQogICAgY29sb3I6IHZhcigtLWdvbGQpICFpbXBvcnRhbnQ7DQogICAgZm9udC13ZWlnaHQ6IDYwMCAhaW1wb3J0YW50Ow0KICAgIGZvbnQtc2l6ZTogMS4wNWVtICFpbXBvcnRhbnQ7DQogICAgZm9udC1zdHlsZTogbm9ybWFsICFpbXBvcnRhbnQ7DQogIH0NCiAgYm9keS5sYW5nLXpoIC5jbi1oZWFkZXIgew0KICAgIGNvbG9yOiB2YXIoLS13aGl0ZSkgIWltcG9ydGFudDsNCiAgICBmb250LXNpemU6IDEuNGVtICFpbXBvcnRhbnQ7DQogIH0NCiAgYm9keS5sYW5nLXpoIC5jbi1zdWIgew0KICAgIGNvbG9yOiB2YXIoLS10ZXh0LWRpbSkgIWltcG9ydGFudDsNCiAgICBmb250LXNpemU6IDAuODVlbSAhaW1wb3J0YW50Ow0KICB9DQoNCiAgLyogTWl4ZWQgaW5saW5lIGVsZW1lbnRzICovDQogIC56aCB7IGRpc3BsYXk6IGlubGluZTsgfQ0KICBib2R5LmxhbmctZW4gLnp2IHsgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50OyB9DQogIGJvZHkubGFuZy16aCAuemggeyBkaXNwbGF5OiBpbmxpbmU7IH0NCg0KICAvKiBCbG9jay1sZXZlbCB6aCBlbGVtZW50cyAob3ZlcnJpZGVzIGlubGluZSBmb3IgZGl2L2gxL3ApICovDQogIGJvZHkubGFuZy16aCBkaXYuemggeyBkaXNwbGF5OiBibG9jayAhaW1wb3J0YW50OyB9DQogIGJvZHkubGFuZy16aCBoMS56aCB7IGRpc3BsYXk6IGJsb2NrICFpbXBvcnRhbnQ7IH0NCiAgYm9keS5sYW5nLXpoIHAuemggeyBkaXNwbGF5OiBibG9jayAhaW1wb3J0YW50OyB9DQogIGJvZHkubGFuZy16aCBoMi56aCB7IGRpc3BsYXk6IGJsb2NrICFpbXBvcnRhbnQ7IH0NCiAgYm9keS5sYW5nLXpoIHNtYWxsLnp2IHsgZGlzcGxheTogaW5saW5lICFpbXBvcnRhbnQ7IH0NCiAgYm9keS5sYW5nLXpoIHVsLnp2IHsgZGlzcGxheTogYmxvY2sgIWltcG9ydGFudDsgfQ0KICBib2R5Lmxhbmctemggc3Bhbi56aCB7IGRpc3BsYXk6IGlubGluZSAhaW1wb3J0YW50OyB9DQoNCiAgLmVuLWlubGluZSB7IGRpc3BsYXk6IGlubGluZTsgfQ0KICBib2R5LmxhbmctemggLmVuLWlubGluZSB7IGRpc3BsYXk6IG5vbmU7IH0NCiAgYm9keS5sYW5nLWVuIC5lbi1pbmxpbmUgeyBkaXNwbGF5OiBpbmxpbmU7IH0NCg0KICAvKiBCbG9jay1sZXZlbCBlbiBlbGVtZW50cyAqLw0KICBib2R5LmxhbmctemggLmVuLWJsb2NrIHsgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50OyB9DQoNCiAgZm9vdGVyIHsNCiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7DQogICAgcGFkZGluZzogNDBweCAyNHB4Ow0KICAgIGNvbG9yOiByZ2JhKDEwNiwxMjIsMTQ0LDAuNCk7DQogICAgZm9udC1zaXplOiAwLjc1ZW07DQogICAgbGV0dGVyLXNwYWNpbmc6IDFweDsNCiAgfQ0KPC9zdHlsZT4NCjwvaGVhZD4NCjxib2R5IGNsYXNzPSJsYW5nLWVuIj4NCg0KPGRpdiBpZD0icHctZ2F0ZSI+DQogIDxpbWcgc3JjPSJsb2dvX3FpYW54aWFuZ192My5wbmciIGFsdD0i5YCc57+FIiBzdHlsZT0ibWF4LXdpZHRoOjE2MHB4O2hlaWdodDphdXRvO21hcmdpbi1ib3R0b206MjRweDtvcGFjaXR5OjAuNjsiPg0KICA8aDI+UWlhbnhpYW5nIHggTEU8L2gyPg0KICA8ZGl2IGNsYXNzPSJwdy1zdWIiPkNvbmZpZGVudGlhbCDCtyBFbnRlciBwYXNzd29yZCB0byB2aWV3PC9kaXY+DQogIDxpbnB1dCB0eXBlPSJwYXNzd29yZCIgaWQ9InB3LWlucHV0IiBwbGFjZWhvbGRlcj0iUGFzc3dvcmQiIG9ua2V5ZG93bj0iaWYoZXZlbnQua2V5PT09J0VudGVyJyljaGVja1B3KCkiPg0KICA8YnV0dG9uIGNsYXNzPSJwdy1idG4iIG9uY2xpY2s9ImNoZWNrUHcoKSI+QUNDRVNTPC9idXR0b24+DQogIDxkaXYgY2xhc3M9InB3LWVycm9yIiBpZD0icHctZXJyb3IiPkludmFsaWQgcGFzc3dvcmQ8L2Rpdj4NCjwvZGl2Pg0KPHNjcmlwdD4NCmZ1bmN0aW9uIGNoZWNrUHcoKSB7DQogIGlmIChkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncHctaW5wdXQnKS52YWx1ZSA9PT0gJzEyMzQ1NicpIHsNCiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncHctZ2F0ZScpLnJlbW92ZSgpOw0KICB9IGVsc2Ugew0KICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwdy1lcnJvcicpLnN0eWxlLmRpc3BsYXkgPSAnYmxvY2snOw0KICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwdy1pbnB1dCcpLnZhbHVlID0gJyc7DQogIH0NCn0NCjwvc2NyaXB0Pg0KDQo8ZGl2IGNsYXNzPSJsYW5nLXRvZ2dsZSI+DQogIDxidXR0b24gY2xhc3M9ImFjdGl2ZSIgaWQ9ImJ0bi1lbiIgb25jbGljaz0ic2V0TGFuZygnZW4nKSI+8J+HqPCfh7IgRU48L2J1dHRvbj4NCiAgPGJ1dHRvbiBpZD0iYnRuLXpoIiBvbmNsaWNrPSJzZXRMYW5nKCd6aCcpIj7wn4e48J+HMyDkuK3mloc8L2J1dHRvbj4NCjwvZGl2Pg0KDQo8IS0tID09PT09PT09PT09PSBDT1ZFUiA9PT09PT09PT09PT09IC0tPg0KPGRpdiBjbGFzcz0iY292ZXIiPg0KICA8ZGl2IGNsYXNzPSJiYWRnZSBlbi1ibG9jayI+Q09ORklERU5USUFMIH4gRk9SIERJU0NVU1NJT048L2Rpdj4NCiAgPGRpdiBjbGFzcz0iYmFkZ2UgemgiIHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij7mnLrlr4Ygwrcg5L2b6K6o6K666K+APC9kaXY+DQogIDxpbWcgc3JjPSJsb2dvX3FpYW54aWFuZ192My5wbmciIGFsdD0i5YCc57+F5LuT5YeGIiBzdHlsZT0ibWF4LXdpZHRoOjI0MHB4O2hlaWdodDphdXRvO21hcmdpbi1ib3R0b206MjRweDtmaWx0ZXI6ZHJvcC1zaGFkb3coMCAwIDE4cHggcmdiYSgyMTIsMTY4LDgzLDAuMikpOyI+DQogIDxoMSBjbGFzcz0iZW4tYmxvY2siPlFpYW54aWFuZyB4IExFPGJyPjxzcGFuIGNsYXNzPSJnb2xkIj5Db21tZXJjaWFsIEJsdWVwcmludCAmYW1wOyBQYXJ0bmVyc2hpcCBGcmFtZXdvcms8L3NwYW4+PC9oMT4NCiAgPGgxIGNsYXNzPSJ6aCIgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPuWAHOe/
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qianxiang x LE — Commercial Blueprint &amp; Partnership Framework</title>
+<style>
+  :root {
+
+  /* === PASSWORD GATE === */
+  #pw-gate {
+    position: fixed; top:0; left:0; width:100%; height:100%;
+    background: var(--navy);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    z-index: 99999;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+  }
+  #pw-gate h2 {
+    color: #fff; font-size: 1.6em; font-weight: 300;
+    margin-bottom: 8px; letter-spacing: 1px;
+  }
+  #pw-gate .pw-sub {
+    color: var(--text-dim); font-size: 0.8em; margin-bottom: 28px;
+  }
+  #pw-gate input {
+    background: rgba(13,31,60,0.8); border: 1px solid rgba(212,168,83,0.3);
+    color: #fff; padding: 12px 20px; font-size: 1.1em; border-radius: 6px;
+    width: 260px; text-align: center; letter-spacing: 2px;
+    outline: none; transition: border 0.2s;
+  }
+  #pw-gate input:focus { border-color: var(--gold); }
+  #pw-gate .pw-btn {
+    margin-top: 14px; padding: 10px 40px;
+    background: var(--gold); color: var(--navy);
+    border: none; border-radius: 6px; font-size: 0.9em; font-weight: 600;
+    cursor: pointer; letter-spacing: 1px; transition: opacity 0.2s;
+  }
+  #pw-gate .pw-btn:hover { opacity: 0.85; }
+  #pw-gate .pw-error {
+    color: var(--danger); font-size: 0.75em; margin-top: 10px; display: none;
+  }
+
+    --navy: #0a1628;
+    --blue-dark: #0d1f3c;
+    --blue: #1a3a5c;
+    --accent: #3b82f6;
+    --gold: #d4a853;
+    --white: #f0f2f5;
+    --text: #c8d0da;
+    --text-dim: #6a7a90;
+    --border: rgba(59,130,246,0.15);
+    --card-bg: rgba(13,31,60,0.6);
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  /* === COVER === */
+  .cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(160deg, #060d18 0%, #0a1628 40%, #0d1f3c 100%);
+    padding: 40px 24px;
+    border-bottom: 1px solid rgba(212,168,83,0.15);
+  }
+  .cover .badge {
+    display: inline-block;
+    border: 1px solid rgba(212,168,83,0.3);
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 6px 18px;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    background: rgba(212,168,83,0.06);
+  }
+  .cover h1 {
+    font-size: 2.8em;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.35;
+    margin-bottom: 8px;
+  }
+  .cover h1 .gold { color: var(--gold); font-weight: 400; }
+  .cover .subtitle {
+    font-size: 1.05em;
+    color: var(--text-dim);
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+  }
+  .cover .line {
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 28px auto;
+    border-radius: 1px;
+  }
+  .cover .parties {
+    display: flex;
+    gap: 40px;
+    margin-top: 28px;
+    font-size: 0.85em;
+    color: var(--text-dim);
+  }
+  .cover .parties span { color: var(--gold); }
+  .cover .date {
+    margin-top: 48px;
+    font-size: 0.75em;
+    color: rgba(106,122,144,0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 64px 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .section:last-child { border-bottom: none; }
+
+  .section-header { margin-bottom: 36px; }
+.section-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .section h2 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .section h2 .gold { color: var(--gold); }
+  .section .sub { color: var(--text-dim); font-size: 0.9em; }
+
+  .section .cn-header { color: var(--text-dim); font-size: 1em; font-weight: 400; margin-bottom: 4px; }
+  .section .cn-sub { color: var(--text-dim); font-size: 0.75em; margin-bottom: 16px; }
+
+  h3 {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #e0e6ef;
+    margin: 28px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h3 .icon { font-size: 1.2em; }
+  p { margin: 10px 0; }
+
+  /* Cards */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin: 18px 0;
+  }
+  .card.gold-border { border-left: 3px solid var(--gold); }
+  .card.blue-border { border-left: 3px solid var(--accent); }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 700px) { .card-grid { grid-template-columns: 1fr; } }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 700px) { .stat-grid { grid-template-columns: 1fr 1fr; } }
+  .stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px;
+    text-align: center;
+  }
+  .stat-card .number {
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1.2;
+  }
+  .stat-card .label {
+    font-size: 0.78em;
+    color: var(--text-dim);
+    margin-top: 6px;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 0.9em;
+  }
+  th {
+    text-align: left;
+    padding: 12px 14px;
+    background: rgba(59,130,246,0.08);
+    color: var(--gold);
+    font-weight: 500;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border);
+  }
+  td {
+    padding: 11px 14px;
+    color: var(--text);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  td small { color: var(--text-dim); display: block; margin-top: 2px; }
+
+  /* Flow */
+  .flow-h { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 18px 0; }
+  .flow-box {
+    background: rgba(59,130,246,0.08);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 8px;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 0.85em;
+    color: var(--text);
+  }
+  .flow-box.gold { border-color: rgba(212,168,83,0.3); background: rgba(212,168,83,0.08); color: var(--gold); }
+  .flow-arrow { color: var(--accent); font-size: 1.3em; }
+  .flow-v { display: flex; flex-direction: column; align-items: center; gap: 6px; margin: 16px 0; }
+  .flow-v .flow-box { width: 100%; max-width: 500px; }
+
+  /* Highlight box */
+  .highlight {
+    background: rgba(212,168,83,0.06);
+    border-left: 3px solid var(--gold);
+    padding: 18px 22px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+  }
+  .highlight p { color: var(--gold); margin: 0; }
+  .highlight.cn { background: rgba(59,130,246,0.06); border-left: 3px solid var(--accent); }
+  .highlight.cn p { color: var(--accent); }
+
+  /* Two column */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+  /* Divider */
+  .lang-divider {
+    text-align: center;
+    margin: 28px 0;
+    position: relative;
+  }
+  .lang-divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: rgba(255,255,255,0.06);
+  }
+  .lang-divider span {
+    background: var(--navy);
+    padding: 0 16px;
+    position: relative;
+    color: var(--text-dim);
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* Tag */
+  .tag {
+    display: inline-block;
+    background: rgba(59,130,246,0.12);
+    color: var(--accent);
+    font-size: 0.75em;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  .tag.gold { background: rgba(212,168,83,0.12); color: var(--gold); }
+  .tag.red { background: rgba(239,68,68,0.1); color: var(--danger); }
+
+  /* Bilingual paragraph block */
+  .bilingual-block { margin: 14px 0; }
+  .bilingual-block .en { color: var(--white); font-size: 1em; margin-bottom: 4px; }
+  .bilingual-block .cn { color: var(--text-dim); font-size: 0.82em; }
+  .bilingual-block .en-title { color: var(--gold); font-weight: 600; font-size: 1.05em; margin-bottom: 4px; }
+  .bilingual-block .cn-title { color: var(--text-dim); font-size: 0.8em; font-style: italic; }
+
+  /* === LANGUAGE TOGGLE === */
+  .lang-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 9999;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(212,168,83,0.4);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+  }
+  .lang-toggle button {
+    all: unset;
+    padding: 8px 16px;
+    font-size: 0.82em;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+    background: rgba(10,22,40,0.85);
+    color: var(--text-dim);
+    border-right: 1px solid rgba(212,168,83,0.15);
+    backdrop-filter: blur(10px);
+  }
+  .lang-toggle button:last-child { border-right: none; }
+  .lang-toggle button.active {
+    background: var(--gold);
+    color: var(--navy);
+  }
+  .lang-toggle button:hover:not(.active) {
+    color: var(--gold);
+    background: rgba(212,168,83,0.1);
+  }
+
+  /* Language visibility */
+  body.lang-en .zh, body.lang-en .cn-header, body.lang-en .cn-sub { display: none; }
+  body.lang-en .bilingual-block .cn { display: none; }
+  body.lang-en .bilingual-block .cn-title { display: none; }
+
+  body.lang-zh .en-block, body.lang-zh .sub { display: none; }
+  body.lang-zh .bilingual-block .en { display: none; }
+  body.lang-zh .bilingual-block .en-title { display: none; }
+  body.lang-zh .zh { display: block; }
+
+  /* In ZH mode, show cn-title, cn-header, cn-sub */
+  body.lang-zh .bilingual-block .cn-title { display: block; }
+  body.lang-zh .cn-header { display: block; }
+  body.lang-zh .cn-sub { display: block; }
+
+  /* In ZH mode, cn blocks become white */
+  body.lang-zh .bilingual-block .cn {
+    color: var(--white) !important;
+    font-size: 1em !important;
+  }
+  body.lang-zh .bilingual-block .cn-title {
+    color: var(--gold) !important;
+    font-weight: 600 !important;
+    font-size: 1.05em !important;
+    font-style: normal !important;
+  }
+  body.lang-zh .cn-header {
+    color: var(--white) !important;
+    font-size: 1.4em !important;
+  }
+  body.lang-zh .cn-sub {
+    color: var(--text-dim) !important;
+    font-size: 0.85em !important;
+  }
+
+  /* Mixed inline elements */
+  .zh { display: inline; }
+  body.lang-en .zh { display: none !important; }
+  body.lang-zh .zh { display: inline; }
+
+  /* Block-level zh elements (overrides inline for div/h1/p) */
+  body.lang-zh div.zh { display: block !important; }
+  body.lang-zh h1.zh { display: block !important; }
+  body.lang-zh p.zh { display: block !important; }
+  body.lang-zh h2.zh { display: block !important; }
+  body.lang-zh small.zh { display: inline !important; }
+  body.lang-zh ul.zh { display: block !important; }
+  body.lang-zh span.zh { display: inline !important; }
+
+  .en-inline { display: inline; }
+  body.lang-zh .en-inline { display: none; }
+  body.lang-en .en-inline { display: inline; }
+
+  /* Block-level en elements */
+  body.lang-zh .en-block { display: none !important; }
+
+  footer {
+    text-align: center;
+    padding: 40px 24px;
+    color: rgba(106,122,144,0.4);
+    font-size: 0.75em;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<div id="pw-gate">
+  <img src="logo_qianxiang_v3.png" alt="乾翔" style="max-width:160px;height:auto;margin-bottom:24px;opacity:0.6;">
+  <h2>Qianxiang x LE</h2>
+  <div class="pw-sub">Confidential · Enter password to view</div>
+  <input type="password" id="pw-input" placeholder="Password" onkeydown="if(event.key==='Enter')checkPw()">
+  <button class="pw-btn" onclick="checkPw()">ACCESS</button>
+  <div class="pw-error" id="pw-error">Invalid password</div>
+</div>
+<script>
+function checkPw() {
+  if (document.getElementById('pw-input').value === '123456') {
+    document.getElementById('pw-gate').remove();
+  } else {
+    document.getElementById('pw-error').style.display = 'block';
+    document.getElementById('pw-input').value = '';
+  }
+}
+</script>
+
+<div class="lang-toggle">
+  <button class="active" id="btn-en" onclick="setLang('en')">🇺🇸 EN</button>
+  <button id="btn-zh" onclick="setLang('zh')">🇨🇳 中文</button>
+</div>
+
+<!-- ============ COVER ============ -->
+<div class="cover">
+  <div class="badge en-block">CONFIDENTIAL · FOR DISCUSSION</div>
+  <div class="badge zh" style="display:none;">机密 · 供讨论用</div>
+  <img src="logo_qianxiang_v3.png" alt="乾翔衍庆" style="max-width:240px;height:auto;margin-bottom:24px;filter:drop-shadow(0 0 18px rgba(212,168,83,0.2));">
+  <h1 class="en-block">Qianxiang x LE<br><span class="gold">Commercial Blueprint &amp; Partnership Framework</span></h1>
+  <h1 class="zh" style="display:none;">乾翔 × LE<br><span class="gold">商业蓝图与合作框架</span></h1>
+  <div class="line"></div>
+  <div class="subtitle en-block">A proposal to restructure our partnership for scale —<br>from ad-hoc cooperation to a systematic commercial engine<br>targeting the Chinese export market</div>
+  <div class="subtitle zh" style="display:none;font-size:1.05em;color:var(--text-dim);margin-top:12px;letter-spacing:0.5px;">一份重组合作关系的提案——从零散合作到系统化商业引擎，<br>瞄准中国出口市场</div>
+  <div class="parties">
+    <div class="en-block">Limitless Evolution L.L.C.<br><span>SDVOSB · Lake Ozark, MO</span></div>
+    <div class="en-block" style="color:var(--text-dim);">×</div>
+    <div class="en-block">四川乾翔衍庆物流科技<br><span>Qianxiang Yanqing · China</span></div>
+    <div class="zh" style="display:none;">四川乾翔衍庆物流科技<br><span>Qianxiang Yanqing · China</span></div>
+    <div class="zh" style="display:none;color:var(--text-dim);">×</div>
+    <div class="zh" style="display:none;">Limitless Evolution L.L.C.<br><span>SDVOSB · Lake Ozark, MO</span></div>
+  </div>
+  <div class="date en-block">June 2026</div>
+  <div class="date zh" style="display:none;">2026年6月</div>
+</div>
+
+<!-- ============ 01. THE OPPORTUNITY ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">01</div>
+    <h2>The <span class="gold">Opportunity</span></h2>
+    <div class="sub">What we're looking at, and why now</div>
+    <div class="cn-header">市场机遇</div>
+    <div class="cn-sub">我们在看什么，为什么是现在</div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="number">20-70%</div>
+      <div class="label"><span class="en-inline">Tariff savings achievable via SDVOSB + tariff engineering</span><br><small class="zh" style="font-size:0.85em;">通过 SDVOSB + 关税工程可实现的关税节省</small></div>
+    </div>
+    <div class="stat-card">
+      <div class="number">$300B+</div>
+      <div class="label"><span class="en-inline">Annual China-to-US export volume (machinery, electronics, metals)</span><br><small class="zh" style="font-size:0.85em;">中国对美年出口额（机械、电子、金属）</small></div>
+    </div>
+    <div class="stat-card">
+      <div class="number">29-39%</div>
+      <div class="label"><span class="en-inline">Current effective tariff rate for many Chinese exporters (Section 301 + 122)</span><br><small class="zh" style="font-size:0.85em;">中国出口商当前实际关税税率（301条+122条款）</small></div>
+    </div>
+    <div class="stat-card">
+      <div class="number">Structural</div>
+      <div class="label"><span class="en-inline">Tariff disparity is policy-driven — not a temporary market anomaly</span><br><small class="zh" style="font-size:0.85em;">关税差异是政策驱动的——不是暂时的市场异常</small></div>
+    </div>
+  </div>
+
+  <div class="card gold-border" style="margin-top:24px;">
+    <div class="bilingual-block">
+      <div class="en"><strong>The core thesis:</strong> Chinese exporters face a structural tariff burden that can be <em>legally</em> reduced by 20–70% through IOR restructuring + HTS code optimization + SDVOSB credentialing. The demand exists. The methodology works. What's missing is a <em>systematic commercial engine</em> to turn this from ad-hoc consulting into a scalable business.</div>
+<div class="cn"><strong>核心理念：</strong>中国出口商面临的关税负担是结构性的。通过 IOR 架构重组 + HTS 编码优化 + SDVOSB 认证，可以<em>合法</em>降低 20–70%。需求已经存在，方法论已经验证。缺的是一台<em>系统化的商业引擎</em>，把这个从零散咨询变成可规模化的生意。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 02. ENTERPRISE VISION ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">02</div>
+    <h2><span class="gold">Enterprise</span> Vision</h2>
+    <div class="sub">Where we are going together</div>
+    <div class="cn-header">企业愿景</div>
+    <div class="cn-sub">我们要一起去哪里</div>
+  </div>
+
+  <div class="card gold-border" style="margin-top:8px;">
+    <div class="bilingual-block">
+      <div class="en-title">Core Vision</div>
+<div class="cn-title">🎯 核心愿景</div>
+      <div class="en">
+        Between Qianxiang and Limitless Evolution, this is more than a tariff-optimization partnership. <strong>Establishing a strategic back-to-back cooperation with the United States</strong> is the <strong>single greatest value</strong> of this business.
+      </div>
+<div class="cn" style="margin-top:8px;">
+        乾翔与 Limitless Evolution 之间，不仅仅是关税优化的合作关系。与美国建立<strong>战略背靠背的合作关系</strong>，才是这项业务<strong>最大的价值所在</strong>。
+      </div>
+    </div>
+  </div>
+
+  <div class="card blue-border">
+    <div class="bilingual-block">
+      <div class="en-title">Why Back-to-Back</div>
+<div class="cn-title">为什么是背靠背</div>
+      <div class="en">
+        Once China and the US form a genuine, deep strategic synergy, what we can do in the future goes far beyond tariff optimization — supply chain integration, market access corridors, cross-border capital flows, joint brand going global... <strong>Back-to-back means unlimited possibilities.</strong>
+      </div>
+<div class="cn" style="margin-top:8px;">
+        一旦中美双方形成了真正的、深度的战略协同，未来我们能够做的事情远不止关税优化——供应链整合、市场准入通道、跨境资本流动、品牌联合出海……<strong>背靠背意味着无限可能</strong>。
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <div class="bilingual-block">
+      <div class="en"><strong>In one sentence:</strong> Our vision is not "to do tariff optimization" — it is to become the strategic bridge connecting commercial resources between China and the United States.</div>
+<div class="cn"><strong>一句话：</strong>我们的愿景不是"做关税优化"——而是成为连接中美商业资源的战略性桥梁。</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ 03. WHERE WE ARE ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">03</div>
+    <h2>Where <span class="gold">We Are</span></h2>
+    <div class="sub">An honest assessment of where we stand</div>
+    <div class="cn-header">客观现状</div>
+    <div class="cn-sub">诚实地评估我们所处的位置</div>
+  </div>
+
+  <!-- Key message: both sides invested heavily without expected results -->
+  <div class="card gold-border">
+    <div class="bilingual-block">
+      <div class="en-title">The Reality We Must Face</div>
+<div class="cn-title">⚠️ 必须面对的现实</div>
+      <div class="en">
+        Both sides have invested significant resources and energy over the past period, but have not achieved the expected commercial results. This is not anyone's fault — it is because we lack a <strong>standardized, process-driven</strong> collaboration system. Commercialization is never determined by the quantity of resources invested, but by <strong>systematic replicability</strong>.
+      </div>
+<div class="cn" style="margin-top:8px;">
+        双方在过去一段时间里都投入了巨大的资源和精力，但并未取得预期的商业效果。这不是任何一方的问题——而是因为我们缺少一个<strong>流程化、标准化</strong>的协作体系。商业化从来不是靠投入资源的数量决定的，而是靠<strong>系统的可复制性</strong>。
+      </div>
+    </div>
+  </div>
+
+  <div class="card blue-border">
+    <div class="bilingual-block">
+      <div class="en-title">Commercialization = Process + Standardization</div>
+<div class="cn-title">商业化 = 流程化 + 标准化</div>
+      <div class="en">
+        Without process, there is no scale. Without standardization, there is no quality control. Our current state is "every client is a unique case" — this is not replicable. We must turn every step of tariff optimization into Standard Operating Procedures (SOPs), from client acquisition to delivery. Let the system run, not the people.
+      </div>
+<div class="cn" style="margin-top:8px;">
+        没有流程化，就无法规模化。没有标准化，就无法质量控制。我们现在的状态是"每个客户都是个案"——这不可复制。我们必须把关税优化的每一个环节做成标准操作程序（SOP），从获客到交付，让系统跑，而不是靠人跑。
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid" style="margin-top:20px;">
+    <div class="card">
+      <h3 style="border:none;padding:0;margin-top:0;"><span class="en-inline">What's Working</span> | <small class="zh" style="font-size:0.8em;">✅ 已验证案例</small></h3>
+      <ul style="padding-left:18px;color:#a8b4c4;">
+        <li style="margin-bottom:6px;"><span class="en-inline">Bio-peptide (35%→16.25%), Fish Oil (31%→21%), GABA/Theanine/Proline (saved 19.4%)</span><br><small class="zh" style="color:var(--text-dim);">生物肽（35%→16.25%）、鱼油（31%→21%）、GABA/茶氨酸/脯氨酸（节省19.4%）</small></li>
+        <li style="margin-bottom:6px;"><span class="en-inline">SDVOSB certification is a genuine competitive moat</span><br><small class="zh" style="color:var(--text-dim);">SDVOSB 认证是真实的竞争护城河</small></li>
+        <li style="margin-bottom:6px;"><span class="en-inline">LE IOR infrastructure is operational and compliant</span><br><small class="zh" style="color:var(--text-dim);">LE-IOR 基础设施已运转且合规</small></li>
+        <li><span class="en-inline">Qianxiang has deep Chinese exporter networks and market development capability</span><br><small class="zh" style="color:var(--text-dim);">乾翔拥有深厚的中国出口商网络和市场开发能力</small></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="border:none;padding:0;margin-top:0;"><span class="en-inline">What's Not Working</span> | <small class="zh" style="font-size:0.8em;">⚠️ 需要修复</small></h3>
+      <ul style="padding-left:18px;color:#a8b4c4;">
+        <li style="margin-bottom:6px;"><span class="en-inline">Quote turnaround: 6 days (market expects 24-48 hours)</span><br><small class="zh" style="color:var(--text-dim);">报价周期：6天（市场期望：24-48小时）</small></li>
+        <li style="margin-bottom:6px;"><span class="en-inline">3 confirmed tariff rate quoting errors — methodology needs reinforcement</span><br><small class="zh" style="color:var(--text-dim);">3次已确认的关税税率报价错误——方法论需要加固</small></li>
+        <li style="margin-bottom:6px;"><span class="en-inline">No tiered pricing model — same margin regardless of volume</span><br><small class="zh" style="color:var(--text-dim);">无分级定价模型——无论量大量小费率相同</small></li>
+        <li style="margin-bottom:6px;"><span class="en-inline">PI/Commission framework does not reflect actual service delivery scope</span><br><small class="zh" style="color:var(--text-dim);">PI/佣金框架不反映实际服务交付范围</small></li>
+        <li><span class="en-inline">No structured SLA or operational synchronization mechanism</span><br><small class="zh" style="color:var(--text-dim);">无结构化的 SLA 或运营同步机制</small></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <p class="en-block"><strong>Root cause hypothesis:</strong> LE is trying to handle everything from the US side — sales, quoting, execution, client management. This model does not scale in the Chinese market. The solution is a <em>clean division of labor</em>.</p>
+    <p class="zh" style="color:var(--text-dim);font-size:0.82em;margin-top:4px;display:none;"><strong>根本原因假设：</strong>LE 试图从美国包揽一切——销售、报价、执行、客户管理。这个模式在中国市场不可扩展。解决方法是<em>清晰的分工</em>。</p>
+  </div>
+</div>
+
+<!-- ============ 04. ENTITY & SHIPPING DATA ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">04</div>
+    <h2>Entity &amp; <span class="gold">Shipping Data</span></h2>
+    <div class="sub">Objective facts based on public customs records and registration filings</div>
+    <div class="cn-header">实体图谱与海运数据</div>
+    <div class="cn-sub">基于公开海关记录和注册文件的客观事实</div>
+  </div>
+
+  <div class="card gold-border">
+    <div class="bilingual-block">
+      <div class="en"><strong>Preface:</strong> US customs data is publicly transparent — accessible to anyone. This is why the gelatin client last year strongly demanded manifest concealment. The data below is not presented to confront — it is presented to build shared understanding, grounded in objective fact, of the landscape we face.</div>
+<div class="cn"><strong>前置说明：</strong>美国海关数据是公开透明的——任何人可查。这也是为什么去年做明胶订单时客户强烈要求隐藏仓单。列出以下数据不是质问，是为了让我们基于客观事实充分理解我们所面对的局面。</div>
+    </div>
+  </div>
+
+  <!-- Shipping Data: LE vs JV -->
+  <div class="two-col" style="margin-top:20px;">
+    <div class="card blue-border">
+      <div class="bilingual-block">
+        <div class="en-title">LE Shipping Data — LIMITLESS EVOLUTION LLC</div>
+<div class="cn-title">LE 海运数据 — LIMITLESS EVOLUTION LLC</div>
+      </div>
+      <table style="margin-top:10px;">
+        <tr><td style="color:var(--gold);width:50%;"><span class="en-inline">Total Shipments</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">总发货票数</span></td><td style="font-weight:600;font-size:1.1em;">319</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">Suppliers</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">供应商</span></td><td>20</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">Destination Ports</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">目的港</span></td><td>7</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">Declared Value</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">申报货值</span></td><td style="font-weight:600;">$1,436,756</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">Total Weight</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">总重量</span></td><td>239 tons</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">India Share</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">印度占比</span></td><td>94.7%</td></tr>
+      </table>
+      <p style="font-size:0.8em;color:var(--text-dim);margin-top:8px;"><span class="en-inline">Peak: Oct 2025 (92/mo)</span><br><small class="zh" style="font-size:0.85em;">高峰：2025年10月（92票/月）</small></p>
+      <p style="font-size:0.8em;color:var(--danger);margin-top:4px;"><span class="en-inline">2026: 14 shipments · declining</span><br><small class="zh" style="font-size:0.85em;">2026年：仅14票 · 衰退中</small></p>
+      <p style="font-size:0.78em;color:var(--text-dim);margin-top:4px;"><span class="en-inline">Top categories: Leather wallets (144) · PU wallets (39) · Wood boards (20) · Cotton shirts (19)</span><br><small class="zh" style="font-size:0.85em;">主要品类：皮钱包(144) · PU钱包(39) · 木砧板(20) · 棉衬衫(19)</small></p>
+    </div>
+
+    <div class="card gold-border">
+      <div class="bilingual-block">
+        <div class="en-title">JV Shipping Data — JUST VENTURES LLC</div>
+<div class="cn-title">JV 海运数据 — JUST VENTURES LLC</div>
+      </div>
+      <table style="margin-top:10px;">
+        <tr><td style="color:var(--gold);width:50%;"><span class="en-inline">Total Shipments</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">总发货票数</span></td><td style="font-weight:600;font-size:1.1em;">378</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">Suppliers</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">供应商</span></td><td>35</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">Destination Ports</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">目的港</span></td><td>10</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">Declared Value</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">申报货值</span></td><td style="font-weight:600;">$1,725,337</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">Total Weight</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">总重量</span></td><td>556 tons</td></tr>
+        <tr><td style="color:var(--gold);"><span class="en-inline">India Share</span><br><span class="zh" style="font-size:0.75em;color:var(--text-dim);">印度占比</span></td><td>95.5%</td></tr>
+      </table>
+      <p style="font-size:0.8em;color:var(--text-dim);margin-top:8px;"><span class="en-inline">Peak: Jan 2026 (153/mo)</span><br><small class="zh" style="font-size:0.85em;">高峰：2026年1月（153票/月）</small></p>
+      <p style="font-size:0.8em;color:var(--success);margin-top:4px;"><span class="en-inline">2026: 352 shipments · booming</span><br><small class="zh" style="font-size:0.85em;">2026年：352票 · 爆发增长</small></p>
+      <p style="font-size:0.78em;color:var(--text-dim);margin-top:4px;"><span class="en-inline">Top categories: Leather wallets (119) · PU wallets (55) · Belts (24) · Biscuits (17)</span><br><small class="zh" style="font-size:0.85em;">主要品类：皮钱包(119) · PU钱包(55) · 皮带(24) · 饼干(17)</small></p>
+    </div>
+  </div>
+
+  <!-- 8 Entities Grid -->
+  <h3 style="margin-top:28px;"><span class="icon">🏢</span> <span class="en-inline">Justin Deskin Controlled Entity Overview</span> | <small class="zh" style="font-size:0.8em;">Justin Deskin 控制的实体总览</small></h3>
+  <div class="two-col" style="gap:10px;">
+    <div class="card" style="padding:14px 16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+        <strong style="color:#fff;">Limitless Evolution LLC</strong>
+        <span style="background:rgba(16,185,129,0.15);color:var(--success);font-size:0.65em;padding:2px 8px;border-radius:3px;">SAM · SDVOSB</span></div>
+      <p style="font-size:0.78em;color:var(--text-dim);margin:0;"><span class="en-inline">2018 · Missouri · 319 shipments/$1.44M · declining in 2026</span><br><small class="zh" style="font-size:0.85em;color:var(--text-dim);">2018 · 密苏里 · 319票/$1.44M · 2026衰退</small></p>
+    </div>
+    <div class="card" style="padding:14px 16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+        <strong style="color:#fff;">Just Ventures LLC</strong>
+        <span style="background:rgba(245,158,11,0.15);color:var(--warning);font-size:0.65em;padding:2px 8px;border-radius:3px;">NO SAM</span></div>
+      <p style="font-size:0.78em;color:var(--text-dim);margin:0;"><span class="en-inline">2022 · Missouri · 378 shipments/$1.73M · current flagship</span><br><small class="zh" style="font-size:0.85em;color:var(--text-dim);">2022 · 密苏里 · 378票/$1.73M · 当前主力</small></p>
+    </div>
+  </div>
+  <div class="two-col" style="gap:10px;margin-top:8px;">
+    <div class="card" style="padding:12px 16px;opacity:0.8;">
+      <strong style="color:#fff;font-size:0.9em;">LE Imports LLC</strong>
+      <span style="background:rgba(245,158,11,0.15);color:var(--warning);font-size:0.6em;padding:1px 6px;border-radius:3px;margin-left:6px;">NO SAM</span>
+      <p style="font-size:0.72em;color:var(--text-dim);margin:4px 0 0;"><span class="en-inline">Registered Mar 2026 · shell · same date as GLOBAL · purpose: China imports?</span><br><small class="zh" style="font-size:0.85em;color:var(--text-dim);">2026.3注册 · 空壳 · 与GLOBAL同日注册 · 用途：中国进口？</small></p>
+    </div>
+    <div class="card" style="padding:12px 16px;opacity:0.8;">
+      <strong style="color:#fff;font-size:0.9em;">LE GLOBAL LLC</strong>
+      <span style="background:rgba(245,158,11,0.15);color:var(--warning);font-size:0.6em;padding:1px 6px;border-radius:3px;margin-left:6px;">NO SAM</span>
+      <p style="font-size:0.72em;color:var(--text-dim);margin:4px 0 0;"><span class="en-inline">Registered Mar 2026 · shell · you mentioned: crawfish? · purpose TBD</span><br><small class="zh" style="font-size:0.85em;color:var(--text-dim);">2026.3注册 · 空壳 · 你提过：小龙虾？· 用途待确认</small></p>
+    </div>
+  </div>
+  <p style="font-size:0.72em;color:var(--text-dim);margin-top:8px;text-align:center;"><span class="en-inline">+ Justventuresllc · LE Canada Inc. · LE Inc. Canada · LE LTD UK (dissolved)</span><br><strong class="en-inline" style="color:var(--warning);">Only LE LLC has federal procurement credentials. All other US entities have NO SAM/SDVOSB.</strong><br><small class="zh" style="font-size:0.85em;color:var(--text-dim);">+ Justventuresllc · LE Canada Inc. · LE Inc. Canada · LE LTD UK (已注销)<br><strong>仅 LE LLC 具备联邦政府采购资质。其余美国实体均无 SAM/SDVOSB。</strong></small></p>
+
+  <!-- SDVOSB Expiration -->
+  <h3 style="margin-top:28px;"><span class="icon">⚠️</span> <span class="en-inline">SDVOSB Credential Expiration</span> | <small class="zh" style="font-size:0.8em;">SDVOSB 资质到期</small></h3>
+  <div class="card gold-border" style="text-align:center;">
+    <div class="bilingual-block">
+      <div class="en-title">May 14, 2026 — LE LLC's SDVOSB credential has formally expired</div>
+<div class="cn-title">2026年5月14日 — LE LLC 的 SDVOSB 资质正式到期</div>
+    </div>
+    <div style="margin:14px 0;">
+      <img src="SBA_SDVOSB_expiration_20260514.png" alt="SBA SDVOSB Expiration" style="max-width:100%;border:1px solid rgba(255,255,255,0.1);border-radius:4px;">
+      <div style="font-size:0.7em;color:var(--text-dim);margin-top:6px;">SBA Records: SDVOSB · VOSB — "Previously Certified" · Exit Date: 2026-05-14</div>
+    </div>
+    <div style="text-align:left;margin-top:12px;">
+      <div class="bilingual-block" style="margin-bottom:12px;">
+        <div class="cn" style="font-size:0.9em;">SBA 自2024年起已不再接受 SDVOSB 自认证。LE LLC 的认证已从 Active 变为 <strong style="color:var(--danger);">Previously Certified</strong>。时间线：4月 SAM 重新激活 → 4月调价 → 5月 SDVOSB 到期 → JV 接棒跑量。</div>
+        <div class="en" style="font-size:0.85em;">SBA has not accepted SDVOSB self-certification since 2024. LE LLC's status changed from Active to <strong style="color:var(--danger);">Previously Certified</strong>. Timeline: April SAM reactivation → April price adjustment → May SDVOSB expiration → JV takes over volume.</div>
+      </div>
+      <div class="highlight">
+        <p class="en-block"><strong>The core question:</strong> If SDVOSB is the moat — is the river drying up? Do we have time before the window closes? Or do we not need the river at all?</p>
+        <p class="zh" style="display:none;color:var(--gold);margin:0;"><strong>核心问题：</strong>如果 SDVOSB 是护城河——这条河是否正在干涸？我们是在窗口关闭前还有时间，还是根本不需要这条河？</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- China gap -->
+  <div class="highlight" style="margin-top:20px;">
+    <div class="bilingual-block">
+      <div class="en"><strong>Key observation:</strong> Across LE+JV, only 18 of 697 shipments are China-sourced (2.6%). India accounts for 95%. China exports $300B annually to the US — you have barely touched it. China orders are few and discontinuous — facing the same structural issues as your other markets. The China market is fundamentally different. These are exactly what we are solving.</div>
+<div class="cn"><strong>关键观察：</strong>LE+JV 合计 697 票中仅 18 票中国货（2.6%）。印度占 95%。中国对美出口每年 $3000 亿——你们几乎完全没碰。中国的订单少且不连续——这与你们其他市场面临同样的结构性问题。中国市场本质不同：大客户要长期框架、法务审查、合规包装。没有这些，订单就是散的。而这些东西，正是我们在解决的。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 05. CHINESE CLIENT PROFILE ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">05</div>
+    <h2>Chinese <span class="gold">Client Profile</span></h2>
+    <div class="sub">Understanding what our clients truly need</div>
+    <div class="cn-header">中国客户画像与需求</div>
+    <div class="cn-sub">理解我们的客户到底需要什么</div>
+  </div>
+
+  <div class="card gold-border">
+    <div class="bilingual-block">
+      <div class="en-title">What Chinese Clients Really Need</div>
+<div class="cn-title">🔍 中国客户真正的需求</div>
+      <div class="en">
+        Chinese exporters need more than just a tariff optimizer. They need a <strong>comprehensive export process service provider</strong>.
+      </div>
+<div class="cn" style="margin-top:8px;">
+        中国的出口商不仅仅需要一个关税优化者。他们更需要一个<strong>全面提供出口流程服务的服务商</strong>。
+      </div>
+    </div>
+  </div>
+
+  <div class="card blue-border">
+    <div class="bilingual-block">
+      <div class="en-title">Capability Gap</div>
+<div class="cn-title">能力缺口</div>
+      <div class="en">
+        Chinese exporters have gaps in their understanding and organizational capabilities regarding many matters — customs compliance, documentation preparation, tariff classification, logistics coordination. This is not because they are unprofessional, but because these matters were previously handled by <strong>freight forwarders</strong>. Freight forwarders did the work but did not help them build <strong>their own knowledge systems and operational capabilities</strong>. So when we say "please prepare these documents yourself," they are actually not equipped to do so.
+      </div>
+<div class="cn" style="margin-top:8px;">
+        中国出口商在很多事务上的理解和组织能力——海关合规、文件准备、关税分类、物流协调——实际上是有欠缺的。这并非他们不专业，而是因为此前这些事务一直由<strong>货代公司</strong>代为处理。货代公司虽然做了，但没有帮他们建立起<strong>自身的认知体系和操作能力</strong>。所以当我们说"你自己准备这些文件"的时候，他们实际上是不具备这个能力的。
+      </div>
+    </div>
+  </div>
+
+  <div class="card gold-border" style="margin-top:16px;">
+    <div class="bilingual-block">
+      <div class="en-title">Service Positioning</div>
+<div class="cn-title">服务定位</div>
+      <div class="en">
+        Therefore, our service positioning should be: a <strong>one-stop export process service provider</strong> — from tariff optimization to customs clearing documents, from logistics coordination to compliance consulting. If we only handle tariff optimization and ask clients to handle the rest themselves, most clients will drop off due to lack of capability. Offering <strong>supporting services</strong> is not an add-on — it is a market access requirement.
+      </div>
+<div class="cn" style="margin-top:8px;">
+        因此，我们的服务定位应该是：<strong>一站式出口流程服务商</strong>——从关税优化到清关文件、从物流协调到合规咨询。如果我们只做关税优化这一块，而让客户自己去处理其他环节，大多数客户会因为能力不足而流失。提供<strong>配套服务</strong>不是附加项，是市场准入的必要条件。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ 06. PROPOSED DIVISION OF LABOR ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">06</div>
+    <h2>Proposed <span class="gold">Division of Labor</span></h2>
+    <div class="sub">Each side does what it does best</div>
+    <div class="cn-header">拟议分工</div>
+    <div class="cn-sub">各做各最擅长的</div>
+  </div>
+
+  <div class="two-col">
+    <div class="card blue-border">
+      <h3 style="border:none; padding:0; margin-top:0;"><span class="en-inline">Qianxiang — Market Engine</span> | <small class="zh" style="font-size:0.8em;">🇨🇳 乾翔 — 市场引擎</small></h3>
+      <table style="margin-top:12px;">
+        <tr><td style="color:var(--gold);font-weight:500;width:40%;"><span class="en-inline">Client Acquisition</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">客户获取</small></td><td><span class="en-inline">Identify, qualify, and onboard Chinese exporters</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">识别、筛选、签约中国出口商</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Relationship Mgmt</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">关系管理</small></td><td><span class="en-inline">Full client-facing service — Chinese language, business etiquette, rapid response</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">全中文客户服务——语言、商务礼仪、快速响应</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Documentation</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">文件处理</small></td><td><span class="en-inline">Collect, verify, and transfer all shipment documents (CI, PL, BL, COO)</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">收集、审核、转交所有运输文件</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Payment Facilitation</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">支付衔接</small></td><td><span class="en-inline">RMB collection from Chinese clients → USD remittance to LE</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">人民币收款→美元汇款至LE</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Market Intel</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">市场情报</small></td><td><span class="en-inline">Track competitor pricing, policy changes, industry trends</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">跟踪竞品定价、政策变化、行业趋势</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Supporting Services</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">配套服务</small></td><td><span class="en-inline">Assist clients with customs docs, logistics planning, compliance advisory</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">协助客户补足清关文件、物流策划、合规咨询</small></td></tr>
+      </table>
+    </div>
+
+    <div class="card gold-border">
+      <h3 style="border:none; padding:0; margin-top:0;"><span class="en-inline">LE — Execution Engine</span> | <small class="zh" style="font-size:0.8em;">🇺🇸 LE — 执行引擎</small></h3>
+      <table style="margin-top:12px;">
+        <tr><td style="color:var(--gold);font-weight:500;width:40%;"><span class="en-inline">IOR Service</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">IOR 服务</small></td><td><span class="en-inline">Act as Importer of Record for all shipments</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">作为所有货物的记录进口商</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Customs Filing</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">海关申报</small></td><td><span class="en-inline">Prepare and submit all US customs entries</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">准备并提交所有美国海关入境申报</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Tariff Engineering</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">关税工程</small></td><td><span class="en-inline">HTS code analysis & optimization to minimize duty exposure</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">HTS 编码分析与优化以最小化关税</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Compliance</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">合规管理</small></td><td><span class="en-inline">Maintain regulatory compliance, bonds, licenses, MGAs</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">维护监管合规、保证金、许可证、MGA</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Warehousing</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">仓储</small></td><td><span class="en-inline">Missouri facility — receiving, storage, distribution</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">密苏里仓库——收货、存储、分拨</small></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <div class="bilingual-block">
+      <div class="en"><strong>Core principle:</strong> LE provides the execution engine. Qianxiang provides the market engine. Each focuses on what they do best. No overlap. No confusion.</div>
+<div class="cn"><strong>核心原则：</strong>LE 提供执行引擎，乾翔提供市场引擎。各做最擅长的部分。没有重叠，没有混乱。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 06. COMMERCIAL MODEL ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">07</div>
+    <h2><span class="gold">Commercial</span> Model</h2>
+    <div class="sub">How the money flows, how the risk is managed, how both sides win</div>
+    <div class="cn-header">商业模型</div>
+    <div class="cn-sub">钱怎么流、风险怎么管、双方怎么共赢</div>
+  </div>
+
+  <h3><span class="icon">📋</span> <span class="en-inline">Contract Architecture</span> | <small class="zh" style="font-size:0.8em;">合同架构</small></h3>
+
+  <div class="card blue-border">
+    <div class="bilingual-block">
+      <div class="en"><strong>Two independent legal instruments — separation of service and commission:</strong></div>
+<div class="cn"><strong>两份独立的法律文件——服务与佣金分离：</strong></div>
+    </div>
+
+    <div class="two-col" style="margin-top:16px;">
+      <div>
+        <p style="color:var(--gold);font-weight:600;margin-bottom:4px;"><span class="en-inline">A. Tripartite Service Agreement</span><br><small class="zh" style="color:var(--text-dim);font-weight:400;font-size:0.85em;">A. 三方服务协议</small></p>
+        <p style="font-size:0.85em;color:var(--text-dim);"><span class="en-inline">Client + LE + Qianxiang — covers: service scope, party roles, responsibilities, payment flow, dispute resolution</span><br><small class="zh" style="font-size:0.85em;">客户 + LE + 乾翔 — 涵盖：服务范围、各方角色、责任、支付流、争议解决</small><br>
+        <em class="en-inline">Commission terms do not appear here.</em><small class="zh"><em>佣金条款不出现于此。</em></small></p>
+      </div>
+      <div>
+        <p style="color:var(--gold);font-weight:600;margin-bottom:4px;"><span class="en-inline">B. Bilateral Channel Agreement</span><br><small class="zh" style="color:var(--text-dim);font-weight:400;font-size:0.85em;">B. 双边渠道协议</small></p>
+        <p style="font-size:0.85em;color:var(--text-dim);"><span class="en-inline">Qianxiang ↔ LE (confidential) — covers: fee calculation model, payment cycles, tier structure, <strong style="color:var(--gold);">client protection clause</strong>, long-term pipeline earnings, guaranteed commission settlement</span><br><small class="zh" style="font-size:0.85em;">乾翔 ↔ LE（保密）— 涵盖：费用计算模型、支付周期、分级结构、<strong style="color:var(--gold);">客户保护条款</strong>、长期管道收益、有保障的佣金结算方案</small><br>
+        <em class="en-inline">Not visible to clients.</em><small class="zh"><em>对客户不可见。</em></small></p>
+        <p style="font-size:0.78em;color:var(--accent);margin-top:6px;"><strong class="en-inline">Client protection principle:</strong><span class="en-inline"> Clients developed by Qianxiang remain Qianxiang's long-term pipeline revenue rights. LE shall not bypass Qianxiang to transact directly with clients. Commission settlement has clear timelines and guarantee mechanisms.</span><br><small class="zh" style="font-size:0.85em;color:var(--text-dim);"><strong>客户保护原则：</strong>乾翔开拓的客户，乾翔拥有该客户的长期管道收益权。LE 不得绕过乾翔直接与客户交易。乾翔的佣金结算有明确的时间节点和保障机制。</small></p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:28px;"><span class="icon">💰</span> <span class="en-inline">Payment Flow — China Exporter Path (90%+ Market)</span><br><small class="zh" style="font-size:0.8em;">资金流 — 中国出口商路径（90%+市场）</small></h3>
+
+  <div class="flow-v">
+    <div class="flow-box">① Tripartite agreement signed — Client + LE + Qianxiang<br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">签署三方协议——客户 + LE + 乾翔</small></div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-box gold">② Client pays Qianxiang in RMB (China-based account)<br><small class="zh" style="font-size:0.8em;color:var(--gold);">客户付人民币给乾翔（中国境内账户）</small></div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-box">③ Qianxiang remits USD to LE's US account (minus agreed commission)<br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">乾翔扣除佣金后汇美元至 LE 美国账户</small></div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-box">④ LE executes IOR + customs filing + delivery<br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">LE 执行 IOR + 海关申报 + 交付</small></div>
+  </div>
+
+  <div class="highlight">
+    <div class="bilingual-block">
+      <div class="en"><strong>Why this path?</strong> Most Chinese exporters cannot or will not wire USD directly to a US entity. Qianxiang bridges the RMB→USD gap. This is not a preference — it's a market requirement.<br><br><strong>One layer deeper:</strong> Qianxiang is a China-US joint venture, and LE is a <strong style="color:var(--danger);">shareholder</strong>. In the Chinese exporter's perception, paying into the JV's account means LE — as a <strong style="color:var(--danger);">shareholder</strong> — has oversight and control. Paying a Chinese company is equivalent to LE having participated in and confirmed receipt of the funds. This <strong style="color:var(--danger);">shareholder</strong> relationship is the trust anchor that makes this bridge viable.</div>
+<div class="cn"><strong>为什么走这条路径？</strong>大多数中国出口商无法或不愿意直接向美国实体汇美元。乾翔架起了人民币→美元的桥梁。这不是偏好——这是市场要求。<br><br><strong>更深一层：</strong>乾翔是中美合资公司，LE 是合资公司的<strong style="color:var(--danger);">股东</strong>。在中国出口商的认知里，向合资公司账户付款，LE 作为<strong style="color:var(--danger);">股东</strong>是有监管权的。向中国公司付款，即代表 LE 已经参与并确认收到了这笔钱。这层<strong style="color:var(--danger);">股东</strong>关系，是这座桥能够成立的信任锚点。</div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:28px;"><span class="icon">🔐</span> <span class="en-inline">Optional: Joint Account Model (Trust-Sensitive Scenarios)</span><br><small class="zh" style="font-size:0.8em;">可选：共管账户模型（信任敏感场景）</small></h3>
+
+  <div class="card">
+    <div class="flow-h" style="gap:8px;">
+      <div class="flow-box" style="font-size:0.82em;"><span class="en-inline">Chinese Bank<br>USD Joint A/C</span><br><small class="zh" style="font-size:0.75em;color:var(--text-dim);">中国银行 · 美元共管账户</small></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box gold" style="font-size:0.82em;"><span class="en-inline">Qianxiang: Maker</span><br><small class="zh" style="font-size:0.8em;color:var(--gold);">乾翔：发起方</small></div>
+      <div class="flow-arrow">+</div>
+      <div class="flow-box gold" style="font-size:0.82em;"><span class="en-inline">LE: Checker</span><br><small class="zh" style="font-size:0.8em;color:var(--gold);">LE：审批方</small></div>
+    </div>
+    <div class="bilingual-block" style="margin-top:14px;">
+      <div class="en">Both parties see real-time balances. <strong>Neither can move funds alone.</strong> Full transparency. Zero trust required. For exploration — not immediate execution.</div>
+      <div class="cn">双方可实时查看余额。<strong>任何一方都无法单方移动资金。</strong>全透明。零信任要求。可探讨——不做立即执行。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 07. TIERED PROFIT MODEL ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">08</div>
+    <h2>Tiered <span class="gold">Profit Model</span></h2>
+    <div class="sub">Volume unlocks better margins — for both sides</div>
+    <div class="cn-header">分级利润模型</div>
+    <div class="cn-sub">量越大，利润越好——双方都受益</div>
+  </div>
+
+  <table>
+    <tr>
+      <th>Tier<br><small class="zh" style="color:var(--text-dim);font-size:0.7em;">层级</small></th><th>Volume<br><small class="zh" style="color:var(--text-dim);font-size:0.7em;">月出货量</small></th><th>Monthly Cargo Value<br><small class="zh" style="color:var(--text-dim);font-size:0.7em;">月货值</small></th><th>LE Margin<br><small class="zh" style="color:var(--text-dim);font-size:0.7em;">LE 利润率</small></th><th>Qianxiang Commission<br><small class="zh" style="color:var(--text-dim);font-size:0.7em;">乾翔佣金</small></th><th>Client Savings<br><small class="zh" style="color:var(--text-dim);font-size:0.7em;">客户节省</small></th>
+    </tr>
+    <tr>
+      <td><strong class="en-inline">Starter</strong><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">起步版</small></td>
+      <td>1–2</td>
+      <td>&lt; $40K</td>
+      <td><span class="en-inline">Standard Rate</span><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">标准费率</small></td>
+      <td><span class="en-inline">5% of cargo value</span><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">货值 5%</small></td>
+      <td>~15–18%</td>
+    </tr>
+    <tr>
+      <td><strong class="en-inline">Growth</strong><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">增长版</small></td>
+      <td>3–8</td>
+      <td>$40K–$400K</td>
+      <td><span class="en-inline">Standard −10%</span><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">标准 −10%</small></td>
+      <td><span class="en-inline">5.5% of cargo value</span><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">货值 5.5%</small></td>
+      <td>~18–20%</td>
+    </tr>
+    <tr>
+      <td><strong class="en-inline">Scale</strong><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">规模版</small></td>
+      <td>9–40</td>
+      <td>$400K–$2M</td>
+      <td><span class="en-inline">Standard −20%</span><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">标准 −20%</small></td>
+      <td><span class="en-inline">6% of cargo value</span><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">货值 6%</small></td>
+      <td>~20–22%</td>
+    </tr>
+    <tr>
+      <td><strong class="en-inline">Enterprise</strong><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">企业版</small></td>
+      <td>40+</td>
+      <td>$2M+</td>
+      <td><span class="en-inline">Standard −30%</span><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">标准 −30%</small></td>
+      <td><span class="en-inline">7% of cargo value</span><br><small class="zh" style="font-size:0.8em;color:var(--text-dim);">货值 7%</small></td>
+      <td>~22–25%</td>
+    </tr>
+  </table>
+
+  <div class="card gold-border" style="margin-top:20px;">
+    <div class="bilingual-block">
+      <div class="en"><strong>The logic:</strong> At low volumes, LE's fixed costs per shipment are high → higher rates. As volume increases, per-unit costs drop → both LE's margin and Qianxiang's commission improve. This aligns incentives: <em>both sides win when volume grows.</em></div>
+<div class="cn"><strong>逻辑：</strong>低量时 LE 单次运输固定成本高→费率较高。量越大，单位成本越低→LE 利润率和乾翔佣金都提高。这使双方激励一致：<em>量增长时，双方共赢。</em></div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:24px;"><span class="icon">🎯</span> <span class="en-inline">20% Savings Baseline — Terminal Pricing</span><br><small class="zh" style="font-size:0.8em;">20% 节省底线 · 终端定价</small></h3>
+  <p style="font-size:0.82em;color:var(--text-dim);margin-bottom:8px;"><span class="en-inline">Applicable to: regular market clients, products within the average tariff range. If tariff rates are unusually high or low, special adjustments may be necessary — because the enterprise's underlying comprehensive costs remain constant.</span><br><small class="zh" style="font-size:0.85em;">适用条件：常规市场客户，处于平均关税区间的产品品类。如果关税过高或过低，我们或许需要进行特别调整——因为企业承担的综合成本是不变的。</small></p>
+  <div class="card blue-border">
+    <table>
+      <tr><th style="width:30%;">Component<br><small class="zh" style="color:var(--text-dim);font-size:0.7em;">组成部分</small></th><th>What We Need from LE<br><small class="zh" style="color:var(--text-dim);font-size:0.7em;">我们需要 LE 提供</small></th></tr>
+      <tr><td><span class="en-inline">LE's all-in execution cost</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">LE 全包执行成本</small></td><td><span class="en-inline">Fixed cost per shipment + variable cost (% of cargo value)</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">单次运输固定成本 + 货值变动成本</small></td></tr>
+      <tr><td><span class="en-inline">LE's required margin</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">LE 所需利润率</small></td><td><span class="en-inline">Minimum margin % LE needs to operate profitably</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">LE 盈利所需的最低利润率</small></td></tr>
+      <tr><td><span class="en-inline">Qianxiang's commission</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">乾翔佣金</small></td><td><span class="en-inline">As per tier structure (5–7% of cargo value)</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">按分级结构（货值 5–7%）</small></td></tr>
+      <tr><td><span class="en-inline">Client terminal price</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">客户终端价格</small></td><td>= Standard duty − ≥20% savings − service fee (must be &lt; standard duty)<br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">= 标准关税 − ≥20% 节省 − 服务费（必须 &lt; 标准关税）</small></td></tr>
+    </table>
+  </div>
+
+  <div class="highlight" style="margin-top:16px;">
+    <div class="bilingual-block">
+      <div class="en"><strong>The hard constraint:</strong> If the client's net savings fall below ~20%, the service loses its value proposition. The market will compare — and the market will walk. <em>We solve the pricing equation together, or we don't have a product.</em></div>
+<div class="cn"><strong>硬约束：</strong>如果客户净节省低于~20%，服务失去价值主张。市场会横向比较——然后离开。<em>定价方程式我们一起解决，否则我们没有产品。</em></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============ 08. OPERATIONAL RHYTHM ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">09</div>
+    <h2>Operational <span class="gold">Rhythm</span></h2>
+    <div class="sub">How we run this as a machine, not a project</div>
+    <div class="cn-header">运营节奏</div>
+    <div class="cn-sub">像一个机器一样运转，而不是一个项目</div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card blue-border">
+      <h3 style="border:none;padding:0;margin-top:0;"><span class="en-inline">Service Commitments</span> | <small class="zh" style="font-size:0.8em;">服务承诺</small></h3>
+      <table>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Quote SLA</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">报价 SLA</small></td><td>48 hours maximum (target: 24 hours)<br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">48 小时上限（目标：24 小时）</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Tariff Verification</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">关税核验</small></td><td><span class="en-inline">Dual-check protocol — no single-source quotes</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">双人校验机制——杜绝单源报价</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Client Updates</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">客户更新</small></td><td><span class="en-inline">Weekly status for active shipments</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">在运货物每周状态同步</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Error Handling</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">错误处理</small></td><td><span class="en-inline">Acknowledged within 24h, corrected within 48h</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">24 小时内确认、48 小时内纠正</small></td></tr>
+      </table>
+    </div>
+    <div class="card gold-border">
+      <h3 style="border:none;padding:0;margin-top:0;"><span class="en-inline">Governance Cadence</span> | <small class="zh" style="font-size:0.8em;">治理节奏</small></h3>
+      <table>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Weekly Ops Sync</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">周运营同步</small></td><td><span class="en-inline">Operational team — active shipments, bottlenecks</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">运营团队——在运货物、瓶颈问题</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Monthly Review</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">月业务回顾</small></td><td><span class="en-inline">Volume, margin, pipeline, market intelligence</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">量、利润、管道、市场情报</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Quarterly Strategy</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">季度战略会</small></td><td><span class="en-inline">Tier adjustment, new categories, policy impact</span><br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">层级调整、新品类、政策影响</small></td></tr>
+        <tr><td style="color:var(--gold);font-weight:500;"><span class="en-inline">Ad-hoc Decision</span><br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">重大决策</small></td><td>Justin ↔ Evan direct line for major decisions<br><small class="zh" style="color:var(--text-dim);font-size:0.78em;">Justin ↔ Evan 直通线</small></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <div class="bilingual-block">
+      <div class="en"><strong>The most important operational rule:</strong> Major decisions — investment above a threshold, new business lines, partnership structure changes — go through Justin and Evan directly. Operational issues are handled by the respective teams. Three rules. Saves months of confusion.</div>
+<div class="cn"><strong>最重要的运营规则：</strong>重大决策——投资超阈值、新业务线、合作结构变更——由 Justin 和 Evan 直接沟通。运营问题由各自团队处理。三条规则。省去几个月的混乱。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 09. WHAT WE NEED FROM LE ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">10</div>
+    <h2>What We Need <span class="gold">From LE</span></h2>
+    <div class="sub">Specific, time-bound, actionable</div>
+    <div class="cn-header">我们需要 LE 做什么</div>
+    <div class="cn-sub">具体、有时限、可执行</div>
+  </div>
+
+  <table>
+    <tr><th style="width:5%;">#</th><th style="width:35%;">Action<br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">事项</small></th><th style="width:15%;">Owner<br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">负责人</small></th><th style="width:18%;">Timeline<br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">时限</small></th><th>Deliverable<br><small class="zh" style="color:var(--text-dim);font-size:0.75em;">交付物</small></th></tr>
+    <tr>
+      <td>1</td>
+      <td><span class="en-inline">Share current client contract template</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">分享现有客户合同模板</small></td>
+      <td>LE</td>
+      <td>3 business days<br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">3个工作日</small></td>
+      <td><span class="en-inline">Contract PDF/DOCX</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">合同 PDF/DOCX</small></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><span class="en-inline">Provide all-in cost breakdown per shipment</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">提供单次运输全成本分解</small></td>
+      <td>LE</td>
+      <td>3 business days<br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">3个工作日</small></td>
+      <td><span class="en-inline">Cost sheet</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">成本表</small></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><span class="en-inline">Confirm tiered profit model structure (counter-proposal if needed)</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">确认分级利润模型结构（或提出反对方案）</small></td>
+      <td>LE</td>
+      <td>5 business days<br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">5个工作日</small></td>
+      <td><span class="en-inline">Tier schedule feedback</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">分级结构反馈</small></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><span class="en-inline">Commit to 48-hour quoting SLA</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">承诺 48 小时报价 SLA</small></td>
+      <td>LE</td>
+      <td><span class="en-inline">Immediate</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">立即</small></td>
+      <td><span class="en-inline">Operational change</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">运营变更</small></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><span class="en-inline">Confirm dual-verification protocol for tariff rates</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">确认关税税率双重校验机制</small></td>
+      <td>LE</td>
+      <td>5 business days<br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">5个工作日</small></td>
+      <td><span class="en-inline">Process document</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">流程文档</small></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><span class="en-inline">Designate weekly ops sync time slot</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">指定周运营同步时间</small></td>
+      <td><span class="en-inline">Joint</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">联合</small></td>
+      <td>3 business days<br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">3个工作日</small></td>
+      <td><span class="en-inline">Calendar invite</span><br><small class="zh" style="color:var(--text-dim);font-size:0.8em;">日历邀请</small></td>
+    </tr>
+  </table>
+
+  <p style="margin-top:12px;"><strong>Qianxiang's next steps (within 1 week of receiving LE's materials):</strong></p>
+  <ul style="padding-left:18px;color:#a8b4c4;">
+    <li>Draft tripartite agreement based on LE's template</li>
+    <li>Draft bilateral channel agreement with fee model</li>
+    <li>Market development timeline with target client profiles</li>
+  </ul>
+  <ul class="zh" style="padding-left:18px;color:var(--text-dim);font-size:0.82em;margin-top:4px;display:none;">
+    <li>基于 LE 模板起草三方协议</li>
+    <li>起草含费用模型的双边渠道协议</li>
+    <li>制定市场开发时间表及目标客户画像</li>
+  </ul>
+</div>
+
+<!-- ============ 10. THE CORE QUESTION ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">11</div>
+    <h2>The <span class="gold">Core Question</span></h2>
+    <div class="sub">What this conversation is really about</div>
+    <div class="cn-header">核心问题</div>
+    <div class="cn-sub">这场对话真正关乎什么</div>
+  </div>
+
+  <div class="card gold-border" style="text-align:center;padding:40px 28px;">
+    <div class="bilingual-block">
+      <div class="en" style="font-size:1.2em;line-height:1.8;color:var(--gold);margin:0;">
+        Is LE willing to restructure this partnership<br>
+        — with a <strong>clean division of labor</strong>,<br>
+        <strong>transparent pricing</strong>, and a<br>
+        <strong>tiered, scalable commercial model</strong> —<br><br>
+        or do we each continue operating<br>
+        under <strong>different assumptions</strong> about<br>
+        what this business is and how it grows?
+      </div>
+<div class="cn" style="font-size:1.2em;line-height:1.8;color:var(--gold);margin:0;">
+        LE 是否愿意重组这个合作关系——<br>
+        以<strong>清晰的分工</strong>、<strong>透明的定价</strong><br>
+        和一个<strong>可规模化的分级商业模型</strong>——<br><br>
+        或者我们各自继续在<strong>不同的假设</strong>下<br>
+        运营这个业务，却以为在同一艘船上？
+      </div>
+      <div style="height:16px;"></div>
+    </div>
+  </div>
+
+  <p class="en-block" style="text-align:center;margin-top:28px;color:var(--text-dim);font-size:0.9em;">
+    Either answer is acceptable. What is not sustainable is two partners rowing in different directions under different assumptions, believing they are in the same boat. This document is about ensuring <em>we are looking at the same map</em>.</p>
+  <p class="zh" style="color:var(--text-dim);font-size:0.82em;display:none;">
+    两个答案都可以。不可持续的是两个合伙人在不同的假设下朝不同方向划船，却以为在同一条船上。这份文件是我们确保<em>我们看的是同一张地图</em>。
+  </p>
+</div>
+
+<!-- ============ 12. IF WE ALIGN ============ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">12</div>
+    <h2>If We Align — <span class="gold">What I Ask of You</span></h2>
+    <div class="sub">Your personal involvement is critical to making this work</div>
+    <div class="cn-header">如果对齐——我对你的请求</div>
+    <div class="cn-sub">你亲自的参与，对我们至关重要</div>
+  </div>
+
+  <div class="card gold-border">
+    <div class="bilingual-block">
+      <div class="en-title">I Need You Personally Involved</div>
+<div class="cn-title">🤝 我需要你亲自参与</div>
+      <div class="en" style="line-height:1.8;">
+        If you agree with this proposal, <strong>I need you to be personally involved</strong>. Not at the day-to-day operational level — technical, repetitive tasks do not need your time. What I need is your judgment and drive on the <strong>commercial framework</strong> and <strong>critical decision nodes</strong>. The steering wheel of this ship needs two hands at the key moments.
+      </div>
+<div class="cn" style="margin-top:8px;line-height:1.9;">
+        如果你同意这个方案，<strong>我需要你亲自参与进来</strong>。不是日常运维层面——技术上的重复性动作不需要你。我需要的，是你在<strong>商业框架</strong>和<strong>关键决策节点</strong>上的判断和推动。这艘船的方向盘，需要两个人在关键时刻一起握。
+      </div>
+    </div>
+  </div>
+
+  <div class="card blue-border" style="margin-top:16px;">
+    <div class="bilingual-block">
+      <div class="en-title">I Need Someone Who Understands the China Market</div>
+<div class="cn-title">🌏 我需要一个理解中国市场的人</div>
+      <div class="en" style="line-height:1.8;">
+        In addition, I would like you to designate <strong>someone who understands the Chinese market and the way Chinese enterprises think</strong> — someone who can work alongside me to map out the full trajectory of what comes next. The commercial logic, client psychology, and negotiation cadence on the China side — these are not things a translator can solve. We need someone who truly gets it, walking this path with us.
+      </div>
+<div class="cn" style="margin-top:8px;line-height:1.9;">
+        此外，我希望你能安排一个<strong>理解中国市场、理解中国企业思维方式</strong>的人——能够配合我一起，把整个事件后期的脉络梳理清楚。中国这边的商业逻辑、客户心理、谈判节奏——这些不是靠翻译能解决的。需要有一个真正懂的人，跟我们一起把这条路走出来。
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <div class="bilingual-block">
+      <div class="en"><strong>In summary:</strong> Technical execution goes to the teams. Strategic direction — the commercial framework and key decision points — I need you in the room. And one person who understands China to map out the road ahead with me. With these three in place, we can begin.</div>
+<div class="cn"><strong>总结：</strong>技术层面交给团队。战略层面——商业框架的搭建和关键节点的决策——我需要你在。同时，一个理解中国的人，和我一起把后面的路梳理清楚。这三件事到位，我们就可以开始了。</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="en-block">Prepared by Qianxiang Yanqing Logistics Technology Co., Ltd. · June 2026 · Confidential<br>
+  For discussion with Justin Deskin, CEO — Limitless Evolution L.L.C.</span>
+  <span class="zh" style="display:none;">四川乾翔衍庆物流科技编制 · 2026年6月 · 保密<br>
+  供 Justin Deskin (CEO — Limitless Evolution L.L.C.) 讨论用</span>
+</footer>
+
+
+<script>
+function setLang(lang) {
+  document.body.className = 'lang-' + lang;
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+}
+</script>
+
+</body>
+</html>
