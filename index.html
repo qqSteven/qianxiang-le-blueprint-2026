@@ -417,6 +417,81 @@
     font-size: 0.75em;
     letter-spacing: 1px;
   }
+
+  /* ============ MOBILE RESPONSIVE ============ */
+  @media (max-width: 768px) {
+    /* Password Gate */
+    #pw-gate h2 { font-size: 1.2em; }
+    #pw-gate .pw-sub { font-size: 0.72em; }
+    #pw-gate input { width: 220px; font-size: 0.95em; padding: 10px 16px; }
+
+    /* Lang Toggle */
+    .lang-toggle { top: 8px; right: 8px; }
+    .lang-toggle button { padding: 6px 12px; font-size: 0.72em; }
+
+    /* Cover */
+    .cover { padding: 60px 16px 40px; min-height: auto; }
+    .cover h1 { font-size: 1.4em; line-height: 1.4; }
+    .cover .subtitle { font-size: 0.85em; }
+    .cover .parties { flex-direction: column; gap: 12px; font-size: 0.78em; }
+    .cover .line { margin: 20px auto; }
+    .cover .date { margin-top: 28px; }
+
+    /* Sections */
+    .section { padding: 40px 16px; }
+    .section h2 { font-size: 1.35em; }
+    .section-num { font-size: 10px; }
+
+    /* Cards */
+    .card { padding: 16px 18px; margin: 12px 0; }
+    .card-grid { grid-template-columns: 1fr; gap: 12px; }
+    .two-col { grid-template-columns: 1fr; gap: 12px; }
+    .stat-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    /* Stats */
+    .stat-card { padding: 14px 10px; }
+    .stat-card .number { font-size: 1.4em; }
+    .stat-card .label { font-size: 0.68em; }
+
+    /* Tables — horizontal scroll wrapper */
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 12px -16px; padding: 0 16px; }
+    table { font-size: 0.75em; }
+    th, td { padding: 8px 10px; white-space: nowrap; }
+    th { font-size: 0.75em; }
+    td { font-size: 0.75em; }
+
+    /* Flow */
+    .flow-h { flex-direction: column; gap: 8px; }
+    .flow-arrow { transform: rotate(90deg); font-size: 1em; }
+    .flow-v .flow-box { max-width: 100%; }
+    .flow-box { padding: 10px 14px; font-size: 0.78em; width: 100%; }
+
+    /* Bilingual */
+    .bilingual-block .en { font-size: 0.9em; }
+    .bilingual-block .cn { font-size: 0.78em; }
+    .bilingual-block .en-title { font-size: 0.95em; }
+    .bilingual-block .cn-title { font-size: 0.75em; }
+
+    /* Highlight */
+    .highlight { padding: 14px 16px; margin: 12px 0; }
+
+    /* h3 headings */
+    h3 { font-size: 1em; margin: 20px 0 10px; }
+    h3 .icon { font-size: 1em; }
+
+    /* Lists */
+    ul, ol { padding-left: 16px; }
+
+    /* Images */
+    img { max-width: 100% !important; height: auto !important; }
+
+    /* Footer */
+    footer { padding: 28px 16px; font-size: 0.68em; }
+
+    /* All tables scroll on mobile */
+    table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .card > table, .two-col > .card > table { display: block; overflow-x: auto; }
+  }
 </style>
 </head>
 <body class="lang-en">
