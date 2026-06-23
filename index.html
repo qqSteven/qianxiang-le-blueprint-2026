@@ -420,77 +420,109 @@
 
   /* ============ MOBILE RESPONSIVE ============ */
   @media (max-width: 768px) {
-    /* Password Gate */
-    #pw-gate h2 { font-size: 1.2em; }
-    #pw-gate .pw-sub { font-size: 0.72em; }
-    #pw-gate input { width: 220px; font-size: 0.95em; padding: 10px 16px; }
+    /* —— Base —— */
+    html { -webkit-text-size-adjust: 100%; }
+    body { line-height: 1.65; word-break: break-word; }
 
-    /* Lang Toggle */
-    .lang-toggle { top: 8px; right: 8px; }
-    .lang-toggle button { padding: 6px 12px; font-size: 0.72em; }
+    /* —— Password Gate —— */
+    #pw-gate h2 { font-size: 1.15em; }
+    #pw-gate .pw-sub { font-size: 0.7em; margin-bottom: 20px; }
+    #pw-gate input { width: 200px; font-size: 0.9em; padding: 10px 14px; }
+    #pw-gate .pw-btn { padding: 10px 32px; font-size: 0.82em; }
 
-    /* Cover */
-    .cover { padding: 60px 16px 40px; min-height: auto; }
-    .cover h1 { font-size: 1.4em; line-height: 1.4; }
-    .cover .subtitle { font-size: 0.85em; }
-    .cover .parties { flex-direction: column; gap: 12px; font-size: 0.78em; }
-    .cover .line { margin: 20px auto; }
-    .cover .date { margin-top: 28px; }
+    /* —— Lang Toggle —— */
+    .lang-toggle { top: 6px; right: 6px; border-radius: 6px; }
+    .lang-toggle button { padding: 5px 10px; font-size: 0.68em; }
 
-    /* Sections */
-    .section { padding: 40px 16px; }
-    .section h2 { font-size: 1.35em; }
-    .section-num { font-size: 10px; }
+    /* —— Cover —— */
+    .cover { padding: 56px 14px 36px; min-height: auto; }
+    .cover h1 { font-size: 1.35em; line-height: 1.45; }
+    .cover .subtitle { font-size: 0.82em; }
+    .cover .parties { flex-direction: column; gap: 8px; font-size: 0.75em; }
+    .cover .badge { font-size: 9px; letter-spacing: 2px; padding: 5px 14px; margin-bottom: 24px; }
+    .cover .line { margin: 18px auto; width: 40px; }
+    .cover .date { margin-top: 24px; font-size: 0.7em; }
+    .cover img[alt="乾翔衍庆"] { max-width: 160px !important; margin-bottom: 16px; }
 
-    /* Cards */
-    .card { padding: 16px 18px; margin: 12px 0; }
-    .card-grid { grid-template-columns: 1fr; gap: 12px; }
-    .two-col { grid-template-columns: 1fr; gap: 12px; }
-    .stat-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    /* —— Sections —— */
+    .section { padding: 36px 14px; }
+    .section h2 { font-size: 1.3em; line-height: 1.4; }
+    .section-num { font-size: 9px; letter-spacing: 1.5px; }
+    .section .sub { font-size: 0.78em; }
+    .section .cn-header { font-size: 1.15em !important; }
+    .section .cn-sub { font-size: 0.72em; }
 
-    /* Stats */
-    .stat-card { padding: 14px 10px; }
-    .stat-card .number { font-size: 1.4em; }
-    .stat-card .label { font-size: 0.68em; }
+    /* —— Headings —— */
+    h3 { font-size: 0.95em; margin: 22px 0 8px; padding-bottom: 6px; }
+    h3 .icon { font-size: 0.95em; }
+    p { margin: 8px 0; }
 
-    /* Tables — horizontal scroll wrapper */
-    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 12px -16px; padding: 0 16px; }
-    table { font-size: 0.75em; }
-    th, td { padding: 8px 10px; white-space: nowrap; }
-    th { font-size: 0.75em; }
-    td { font-size: 0.75em; }
+    /* —— Cards —— */
+    .card { padding: 14px 16px; margin: 10px 0; border-radius: 8px; }
+    .card-grid { grid-template-columns: 1fr; gap: 10px; }
+    .two-col { grid-template-columns: 1fr; gap: 10px; }
 
-    /* Flow */
-    .flow-h { flex-direction: column; gap: 8px; }
-    .flow-arrow { transform: rotate(90deg); font-size: 1em; }
+    /* —— Stats —— */
+    .stat-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .stat-card { padding: 12px 8px; border-radius: 6px; }
+    .stat-card .number { font-size: 1.35em; }
+    .stat-card .label { font-size: 0.65em; }
+
+    /* —— Tables (horizontal scroll) —— */
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 10px -14px; padding: 0 14px; }
+    table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 0.72em; }
+    th, td { padding: 7px 8px; white-space: nowrap; }
+    th { font-size: 0.72em; }
+    td { font-size: 0.72em; }
+    td small { font-size: 0.95em; }
+
+    /* —— Flow —— */
+    .flow-h { flex-direction: column; gap: 6px; }
+    .flow-arrow { transform: rotate(90deg); font-size: 0.9em; margin: 2px 0; }
     .flow-v .flow-box { max-width: 100%; }
-    .flow-box { padding: 10px 14px; font-size: 0.78em; width: 100%; }
+    .flow-box { padding: 8px 12px; font-size: 0.75em; width: 100%; border-radius: 6px; }
 
-    /* Bilingual */
+    /* —— Bilingual —— */
+    .bilingual-block { margin: 10px 0; }
     .bilingual-block .en { font-size: 0.9em; }
-    .bilingual-block .cn { font-size: 0.78em; }
-    .bilingual-block .en-title { font-size: 0.95em; }
-    .bilingual-block .cn-title { font-size: 0.75em; }
+    .bilingual-block .cn { font-size: 0.85em; }
+    .bilingual-block .en-title { font-size: 0.92em; }
+    .bilingual-block .cn-title { font-size: 0.85em; }
 
-    /* Highlight */
-    .highlight { padding: 14px 16px; margin: 12px 0; }
+    /* —— Highlight —— */
+    .highlight { padding: 12px 14px; margin: 10px 0; border-radius: 0 6px 6px 0; }
+    .highlight p { font-size: 0.9em; }
 
-    /* h3 headings */
-    h3 { font-size: 1em; margin: 20px 0 10px; }
-    h3 .icon { font-size: 1em; }
+    /* —— Lists —— */
+    ul, ol { padding-left: 18px; }
+    li { margin: 4px 0; }
 
-    /* Lists */
-    ul, ol { padding-left: 16px; }
-
-    /* Images */
+    /* —— Images —— */
     img { max-width: 100% !important; height: auto !important; }
 
-    /* Footer */
-    footer { padding: 28px 16px; font-size: 0.68em; }
+    /* —— Footer —— */
+    footer { padding: 24px 14px; font-size: 0.65em; }
 
-    /* All tables scroll on mobile */
-    table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .card > table, .two-col > .card > table { display: block; overflow-x: auto; }
+    /* —— Language divider —— */
+    .lang-divider { margin: 20px 0; }
+    .lang-divider span { font-size: 0.68em; padding: 0 10px; }
+
+    /* —— Tags —— */
+    .tag { font-size: 0.68em; padding: 1px 8px; }
+  }
+
+  /* —— Small phones (iPhone SE, etc) —— */
+  @media (max-width: 400px) {
+    .cover h1 { font-size: 1.2em; }
+    .section h2 { font-size: 1.15em; }
+    .section { padding: 28px 12px; }
+    .stat-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+    .stat-card { padding: 10px 6px; }
+    .stat-card .number { font-size: 1.2em; }
+    .card { padding: 12px 14px; border-radius: 6px; }
+    .bilingual-block .en { font-size: 0.85em; }
+    table { font-size: 0.68em; }
+    th, td { padding: 6px 6px; }
   }
 </style>
 </head>
